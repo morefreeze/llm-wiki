@@ -26,3 +26,9 @@
 - 更新 `index.md`（9 页面，2 资料，4 实体，1 主题）
 
 ## [2026-05-06] ingest | LLM Wiki Pattern by Karpathy
+
+## [2026-05-06] ingest | Building agents that reach production systems with MCP
+
+## [2026-05-06] ingest | 从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering
+
+## [2026-05-06] ingest | 当我们在讨论 Harness 的时候，我们在讨论什么
