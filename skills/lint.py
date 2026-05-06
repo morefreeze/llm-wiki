@@ -12,7 +12,7 @@ from pathlib import Path
 from collections import defaultdict
 
 WIKI_ROOT = Path(__file__).resolve().parent.parent
-RAW_DIR = WIKI_ROOT / "raw"
+RAW_DIR = WIKI_ROOT / "_raw"
 WIKI_DIR = WIKI_ROOT / "wiki"
 SOURCES_DIR = WIKI_DIR / "sources"
 ENTITIES_DIR = WIKI_DIR / "entities"

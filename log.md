@@ -24,3 +24,5 @@
 - 创建主题页：
   - `wiki/topics/agent-efficiency.md` — Agent 效率优化（综合两篇资料）
 - 更新 `index.md`（9 页面，2 资料，4 实体，1 主题）
+
+## [2026-05-06] ingest | LLM Wiki Pattern by Karpathy
