@@ -2,7 +2,7 @@
 type:: Topic
 tags:: #agent #developer-workflow #coding #practices
 created:: [[2026-05-06]]
-sources:: [[10-lessons-for-agentic-coding]]
+sources:: [[10-lessons-for-agentic-coding]] [[how-anthropic-teams-use-claude-code]]
 ---
 
 # Agentic 开发者实践
@@ -24,32 +24,67 @@ Agent 时代的开发者不再是代码生产者，而是**判断者、引导者
 | 实现 | 谨慎，成本高 | 大胆实验，频繁重建 |
 | 测试 | 单元测试为主 | 端到端测试优先 |
 | 规格 | 项目前固定 | 随实现持续更新（[[living-specs]]） |
-| 文档 | 结果文档 | 意图文档（why > what） |
+| 文档 | 意图记在脑子里 | [[claude-md-files]] 持久化 |
+| 版本控制 | 里程碑提交 | [[checkpoint-workflow]]：频繁提交、失败回滚 |
 
 ### 🎯 精力分配
-- **自动化**：所有简单、重复的任务
+- **自动化**：所有简单、重复的任务（批量广告创意、测试生成、重构）
 - **聚焦**：设计决策、性能优化、安全架构——真正难的问题
 - **培养**：领域专业知识和用户理解（"品味"）
 
-### 🧠 与 Agent 协作
-- **经验放大效应**：技术深度越高，Agent 使用效率越高
-- 能更精准地提示 Agent
-- 能更快识别 Agent 的错误
-- 能更有效地引导探索方向
+### 🧠 与 Agent 协作模式
+
+**任务分类（来自 Anthropic 内部实践）：**
+| 任务类型 | 策略 |
+|---------|------|
+| 外围功能/原型 | auto-accept 模式，失败就 rollback |
+| 核心业务逻辑 | 同步监督，给详细 prompt，实时检查 |
+| 陌生代码库 | 让 Claude 先说，再提问 |
+| 复杂重构 | Slot machine：commit → 30分钟 → 接受/重来 |
+
+**经验放大效应：**
+- 技术深度越高，Agent 使用效率越高（Anthropic 工程师的普遍观察）
+- 能更精准提示、更快识别错误、更有效引导方向
+- 但非技术人员同样受益——法务、市场、设计师都能构建生产级工具
+
+### 📋 工作流建议
+1. **在 Claude.ai 规划，在 Claude Code 实现** — 先用对话界面思考清楚
+2. **写好 [[claude-md-files]]** — 记录工作流、工具、约定、注意事项
+3. **Treat as iterative partner** — 不要期望一次性完美解决，迭代协作
+4. **从最少信息开始** — 让 Claude 引导你，而非前置大量解释
+
+## 跨职能扩展（非技术团队的 Agentic Coding）
+Anthropic 内部的显著发现：**非开发者也能受益**
+- 法务团队：1小时构建无障碍辅助应用
+- 市场团队：构建 Figma 插件和 MCP server
+- 产品设计师：直接实现 state management 修改
+
+关键：让非技术用户在 Claude.md 中说明自己的背景（"我是设计师，需要详细解释"），Agent 会调整响应风格。
+
+## 量化参考数据（来自 Anthropic）
+| 场景 | 提升 |
+|------|------|
+| 基础设施调试 | 15分钟 → 5分钟 |
+| 广告文案制作 | 2小时 → 15分钟 |
+| 数据科学重构 | 2-4x 提速 |
+| ML 概念研究 | 80% 时间节省 |
+| 复杂产品上线 | 一周协调 → 两次30分钟通话 |
 
 ## 与其他主题的关系
 | 主题 | 关联 |
 |------|------|
-| [[agent-efficiency]] | 从 token/工具层面的效率 vs 开发者工作流效率，互补视角 |
+| [[agent-efficiency]] | token/工具层面的效率 vs 开发者工作流效率，互补视角 |
 | [[agent-production]] | 生产化基础设施（[[harness]]、[[mcp]]）是开发者实践的运行环境 |
 
 ## 开放问题
 - 随着 Agent 能力提升，"品味"和"经验"的优势会持续多久？
 - 端到端测试能否完全替代单元测试，还是两者需要平衡？
-- 活规格文档如何与传统项目管理工具集成？
+- 非技术人员的 agentic coding 采用会改变软件团队的组织结构吗？
 
 ## 参见
 - [[agentic-coding]] — 核心概念
-- [[living-specs]] — 关键实践之一
+- [[living-specs]] — 活规格文档实践
+- [[claude-md-files]] — 持久化上下文文件
+- [[checkpoint-workflow]] — Agent 安全网
 - [[harness]] — 生产化约束层
 - [[agent-efficiency]] — 效率优化主题

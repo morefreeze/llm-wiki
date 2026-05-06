@@ -5,7 +5,7 @@ updated:: [[2026-05-06]]
 
 # LLM Wiki Index
 
-> 📊 **19 pages** | 6 sources · 10 entities · 3 topics
+> 📊 **23 pages** | 7 sources · 12 entities · 3 topics
 
 ---
 
@@ -19,6 +19,7 @@ updated:: [[2026-05-06]]
 | [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] | Harness 层将 Agent 从玩具提升到生产力 | BestBlogs |
 | [[当我们在讨论-harness-的时候我们在讨论什么]] | MiniMax × Hermes Agent 关于 Harness 的深度对谈 | BestBlogs |
 | [[10-lessons-for-agentic-coding]] | 代码廉价时代开发者的 10 条实践原则 | dbreunig.com |
+| [[how-anthropic-teams-use-claude-code]] | Anthropic 10 个内部团队的 Claude Code 实战报告 | Anthropic PDF |
 
 ## 🧩 Entities（实体）
 
@@ -34,18 +35,20 @@ updated:: [[2026-05-06]]
 | [[elicitation]] | Feature | MCP server 中途暂停请求用户输入 |
 | [[agentic-coding]] | Concept | 使用 AI Agent 辅助编码的开发范式，经验被放大 |
 | [[living-specs]] | Practice | 随实现持续演进的活规格文档 |
+| [[claude-md-files]] | Practice | 持久化 Agent 上下文的 Markdown 文件，持续改进飞轮 |
+| [[checkpoint-workflow]] | Practice | 频繁提交 Git 检查点、失败时回滚的 Agent 协作安全网 |
 
 ## 🌐 Topics（主题）
 
 | 页面 | 核心问题 | 涉及实体 |
 |------|---------|----------|
 | [[agent-efficiency]] | Agent 规模化后 token 和效率挑战 | [[code-mode]] [[progressive-disclosure]] [[tool-search]] |
-| [[agent-production]] | Agent 从玩具到生产化的路径 | [[mcp]] [[harness]] [[skills]] [[plugin]] |
-| [[agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[agentic-coding]] [[living-specs]] |
+| [[agent-production]] | Agent 从玩具到生产化的路径 | [[mcp]] [[harness]] [[skills]] |
+| [[agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[agentic-coding]] [[living-specs]] [[claude-md-files]] [[checkpoint-workflow]] |
 
 ## 📊 Stats
 
-- Sources: 6
-- Entities: 10
+- Sources: 7
+- Entities: 12
 - Topics: 3
 - Synthesis: 0
