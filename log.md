@@ -32,3 +32,13 @@
 ## [2026-05-06] ingest | 从玩具到生产力：用真实项目讲透 AI Agent 的 Harness Engineering
 
 ## [2026-05-06] ingest | 当我们在讨论 Harness 的时候，我们在讨论什么
+
+## [2026-05-06] ingest | 10 Lessons for Agentic Coding (D. Breunig)
+- 添加原始资料到 `_raw/10-lessons-for-agentic-coding.md`
+- 创建资料摘要页 `wiki/sources/10-lessons-for-agentic-coding.md`
+- 创建实体页：
+  - `wiki/entities/agentic-coding.md` — Agentic coding 开发范式
+  - `wiki/entities/living-specs.md` — 活规格文档实践
+- 创建主题页：
+  - `wiki/topics/agentic-developer-practices.md` — 代码廉价时代开发者工作方式
+- 更新 `index.md`（19 页面，6 资料，10 实体，3 主题）

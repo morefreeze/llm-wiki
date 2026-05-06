@@ -5,7 +5,7 @@ updated:: [[2026-05-06]]
 
 # LLM Wiki Index
 
-> 📊 **15 pages** | 5 sources · 8 entities · 2 topics
+> 📊 **19 pages** | 6 sources · 10 entities · 3 topics
 
 ---
 
@@ -18,6 +18,7 @@ updated:: [[2026-05-06]]
 | [[building-agents-that-reach-production-systems-with-mcp]] | 三种 Agent 连接方式对比，MCP 成为生产标准 | Anthropic Blog |
 | [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] | Harness 层将 Agent 从玩具提升到生产力 | BestBlogs |
 | [[当我们在讨论-harness-的时候我们在讨论什么]] | MiniMax × Hermes Agent 关于 Harness 的深度对谈 | BestBlogs |
+| [[10-lessons-for-agentic-coding]] | 代码廉价时代开发者的 10 条实践原则 | dbreunig.com |
 
 ## 🧩 Entities（实体）
 
@@ -31,6 +32,8 @@ updated:: [[2026-05-06]]
 | [[tool-search]] | Pattern | 运行时按需搜索工具目录，token 减少 85%+ |
 | [[mcp-apps]] | Extension | MCP 首个官方扩展，返回交互式界面 |
 | [[elicitation]] | Feature | MCP server 中途暂停请求用户输入 |
+| [[agentic-coding]] | Concept | 使用 AI Agent 辅助编码的开发范式，经验被放大 |
+| [[living-specs]] | Practice | 随实现持续演进的活规格文档 |
 
 ## 🌐 Topics（主题）
 
@@ -38,10 +41,11 @@ updated:: [[2026-05-06]]
 |------|---------|----------|
 | [[agent-efficiency]] | Agent 规模化后 token 和效率挑战 | [[code-mode]] [[progressive-disclosure]] [[tool-search]] |
 | [[agent-production]] | Agent 从玩具到生产化的路径 | [[mcp]] [[harness]] [[skills]] [[plugin]] |
+| [[agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[agentic-coding]] [[living-specs]] |
 
 ## 📊 Stats
 
-- Sources: 5
-- Entities: 8
-- Topics: 2
+- Sources: 6
+- Entities: 10
+- Topics: 3
 - Synthesis: 0
