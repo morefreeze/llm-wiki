@@ -43,6 +43,18 @@
   - `wiki/topics/information-workflow.md` — 从发现到复用的完整知识输入路径
 - 更新 `index.md`（27 页面，8 资料，13 实体，4 主题）
 
+## [2026-05-07] ingest | 深度拆解 Hermes Agent 的记忆系统（Manthan Gupta / 宝玉整理）
+- 从本地 RSS Pal 数据库提取文章内容（article ID 1119）
+- 添加原始资料到 `_raw/hermes-agent-memory-system.txt`
+- 创建资料摘要页 `wiki/sources/hermes-agent-memory-system.md`
+- 创建实体页：
+  - `wiki/entities/agent-memory-system.md` — Agent 四层记忆架构（语义/情景/程序/用户建模）+ Prompt Cache 优化原则
+- 更新实体页：
+  - `wiki/entities/skills.md` — 补充 Skills 作为程序记忆（Procedural Memory）的角色
+- 更新主题页：
+  - `wiki/topics/agent-efficiency.md` — 补充记忆分层与 Prompt Cache 命中率作为 Agent 效率的维度
+- 更新 `index.md`（34 页面，11 资料，17 实体，4 主题）
+
 ## [2026-05-07] ingest | Karpathy 最新访谈：Vibe Coding 只是开始，真正重要的是 Agentic Engineering（宝玉整理）
 - 从本地 RSS Pal 数据库提取文章内容（article ID 1108）
 - 添加原始资料到 `_raw/karpathy-vibe-coding-to-agentic-engineering.txt`

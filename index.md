@@ -5,7 +5,7 @@ updated:: [[2026-05-06]]
 
 # LLM Wiki Index
 
-> 📊 **32 pages** | 10 sources · 16 entities · 4 topics
+> 📊 **34 pages** | 11 sources · 17 entities · 4 topics
 
 ---
 
@@ -23,6 +23,7 @@ updated:: [[2026-05-06]]
 | [[bestblogs-2.0-reading-workflow]] | 内容判断才是稀缺资源，BestBlogs 转型为阅读工作流工具 | BestBlogs |
 | [[harness-knowledge-moat]] | Harness 不是目的，知识才是护城河——AI 工程团队的知识沉淀实践 | BestBlogs |
 | [[karpathy-vibe-coding-to-agentic-engineering]] | Vibe Coding 只是开始，真正重要的是 Agentic Engineering | baoyu.io |
+| [[hermes-agent-memory-system]] | Hermes Agent 四层记忆架构：冷热分离 + 缓存优先 + 程序记忆 | baoyu.io |
 
 ## 🧩 Entities（实体）
 
@@ -44,6 +45,7 @@ updated:: [[2026-05-06]]
 | [[knowledge-lifecycle]] | Concept | 五层存储 × 五种类型 × 三级成熟度 + 自动衰减的团队知识架构 |
 | [[software-3-0]] | Paradigm | LLM 作为新的可编程计算机，context window 作为程序 |
 | [[vibe-coding]] | Practice | 凭感觉编程（Karpathy 提出）vs Agentic Engineering 的下限/上限区分 |
+| [[agent-memory-system]] | Architecture | Agent 四层记忆架构：语义/情景/程序/用户建模 + Prompt Cache 优化 |
 
 ## 🌐 Topics（主题）
 
@@ -56,7 +58,7 @@ updated:: [[2026-05-06]]
 
 ## 📊 Stats
 
-- Sources: 10
-- Entities: 16
+- Sources: 11
+- Entities: 17
 - Topics: 4
 - Synthesis: 0

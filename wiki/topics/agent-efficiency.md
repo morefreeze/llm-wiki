@@ -1,9 +1,9 @@
 ---
 type:: Topic
-tags:: #agent #efficiency #token-optimization #mcp
+tags:: #agent #efficiency #token-optimization #mcp #memory
 created:: [[2026-05-06]]
-updated:: [[2026-05-06]]
-sources:: [[anthropic-code-execution-with-mcp]] [[llm-wiki-pattern]] [[building-agents-that-reach-production-systems-with-mcp]]
+updated:: [[2026-05-07]]
+sources:: [[anthropic-code-execution-with-mcp]] [[llm-wiki-pattern]] [[building-agents-that-reach-production-systems-with-mcp]] [[hermes-agent-memory-system]]
 ---
 
 # Agent 效率优化
@@ -37,10 +37,30 @@ sources:: [[anthropic-code-execution-with-mcp]] [[llm-wiki-pattern]] [[building-
 - Programmatic Tool Calling：多步骤工作流 token 减少 37%
 - 知识复用：Wiki 模式消除了 RAG 的重复检索开销
 
+## 记忆分层与 Prompt Cache（Hermes 的补充视角）
+
+[[hermes-agent-memory-system]] 提供了另一个效率维度：**Prompt Cache 命中率**。
+
+Hermes Agent 的核心优化目标：让系统提示词的稳定前缀尽可能长时间不变 = 高 Cache 命中率 = 低延迟低成本。
+
+由此衍生的[[agent-memory-system]]四层架构：
+
+| 层级 | 大小 | 放在哪里 | 触发方式 |
+|------|------|---------|---------|
+| 提示词记忆（MEMORY.md + USER.md） | ~1300 Token | 系统提示词（固化） | 会话开始自动注入 |
+| 技能索引 | 轻量 | 系统提示词（固化） | 会话开始自动注入 |
+| 完整技能内容 | 按需 | 工具调用返回 | 模型主动请求 |
+| SQLite 历史会话 | 大 | 数据库（冷存储） | session_search 工具触发 |
+
+原则：**把常驻信息做小做稳（缓存友好），把偶发信息做成工具调用（按需检索）。**
+
+这与本主题的核心原则完全一致：按需加载、数据在执行环境处理，只有真正需要的信息才进入上下文窗口。
+
 ## 开放问题
 - 代码执行环境的沙箱安全如何平衡效率？
 - 大规模 Agent 系统中如何管理 Skills 的版本和依赖？
 - Wiki 增长到数千页后，index.md 是否需要升级为搜索引擎（如 qmd）？
+- Prompt Cache 对不同模型供应商的命中率差异有多大？记忆架构设计需要为此做调整吗？
 
 ## 参见
 - [[mcp]] — 工具连接协议

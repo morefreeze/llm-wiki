@@ -24,9 +24,11 @@ sources:: [[anthropic-code-execution-with-mcp]]
   }
   ```
 - ## 与其他系统的关系
-- Hermes Agent 的 Skills 系统（`~/.hermes/skills/`）采用相同理念
+- Hermes Agent 的 Skills 系统（`~/.hermes/skills/`）采用相同理念——作为**程序记忆（Procedural Memory）**：如何做事（知识）vs 记住什么（语义/情景记忆）
 - 每个 Skill 包含 SKILL.md + 可选的脚本/模板/资源文件
+- Hermes 的技能索引 + 按需加载设计 = [[progressive-disclosure]] 的具体实现：提示词中只有技能索引（轻量），完整技能内容按需加载
 - 这正是 LLM Wiki 模式中 Schema 层的实践
+- 参见 [[agent-memory-system]] 了解 Skills 在 Hermes 四层记忆架构中的位置
 - ## 关联
 - [[mcp]] — Skills 基于代码执行 + MCP 环境
 - [[llm-wiki-pattern]] — Wiki 本身可视为一种 Skill
