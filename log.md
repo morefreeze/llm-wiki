@@ -33,6 +33,16 @@
 
 ## [2026-05-06] ingest | 当我们在讨论 Harness 的时候，我们在讨论什么
 
+## [2026-05-07] ingest | BestBlogs 2.0 内测开启（BestBlogs 创始人）
+- 从本地 RSS Pal 数据库提取文章内容（article ID 1572）
+- 添加原始资料到 `_raw/bestblogs-2.0-reading-workflow.md`
+- 创建资料摘要页 `wiki/sources/bestblogs-2.0-reading-workflow.md`
+- 创建实体页：
+  - `wiki/entities/information-filtering.md` — 内容判断能力，信息过载时代的真正稀缺资源
+- 创建主题页：
+  - `wiki/topics/information-workflow.md` — 从发现到复用的完整知识输入路径
+- 更新 `index.md`（27 页面，8 资料，13 实体，4 主题）
+
 ## [2026-05-06] ingest | How Anthropic Teams Use Claude Code (Anthropic PDF)
 - 添加原始资料到 `_raw/how-anthropic-teams-use-claude-code.md`（从 PDF 提取）
 - 创建资料摘要页 `wiki/sources/how-anthropic-teams-use-claude-code.md`

@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-06]]
+updated:: [[2026-05-07]]
 ---
 
 # LLM Wiki Index
 
-> 📊 **23 pages** | 7 sources · 12 entities · 3 topics
+> 📊 **27 pages** | 8 sources · 13 entities · 4 topics
 
 ---
 
@@ -20,6 +20,7 @@ updated:: [[2026-05-06]]
 | [[当我们在讨论-harness-的时候我们在讨论什么]] | MiniMax × Hermes Agent 关于 Harness 的深度对谈 | BestBlogs |
 | [[10-lessons-for-agentic-coding]] | 代码廉价时代开发者的 10 条实践原则 | dbreunig.com |
 | [[how-anthropic-teams-use-claude-code]] | Anthropic 10 个内部团队的 Claude Code 实战报告 | Anthropic PDF |
+| [[bestblogs-2.0-reading-workflow]] | 内容判断才是稀缺资源，BestBlogs 转型为阅读工作流工具 | BestBlogs |
 
 ## 🧩 Entities（实体）
 
@@ -37,6 +38,7 @@ updated:: [[2026-05-06]]
 | [[living-specs]] | Practice | 随实现持续演进的活规格文档 |
 | [[claude-md-files]] | Practice | 持久化 Agent 上下文的 Markdown 文件，持续改进飞轮 |
 | [[checkpoint-workflow]] | Practice | 频繁提交 Git 检查点、失败时回滚的 Agent 协作安全网 |
+| [[information-filtering]] | Concept | 内容判断能力——信息过载时代真正稀缺的资源 |
 
 ## 🌐 Topics（主题）
 
@@ -45,10 +47,11 @@ updated:: [[2026-05-06]]
 | [[agent-efficiency]] | Agent 规模化后 token 和效率挑战 | [[code-mode]] [[progressive-disclosure]] [[tool-search]] |
 | [[agent-production]] | Agent 从玩具到生产化的路径 | [[mcp]] [[harness]] [[skills]] |
 | [[agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[agentic-coding]] [[living-specs]] [[claude-md-files]] [[checkpoint-workflow]] |
+| [[information-workflow]] | 从发现到复用的完整知识输入路径 | [[information-filtering]] [[llm-wiki-pattern]] |
 
 ## 📊 Stats
 
-- Sources: 7
-- Entities: 12
-- Topics: 3
+- Sources: 8
+- Entities: 13
+- Topics: 4
 - Synthesis: 0
