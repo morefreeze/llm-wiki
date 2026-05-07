@@ -5,7 +5,7 @@ updated:: [[2026-05-06]]
 
 # LLM Wiki Index
 
-> 📊 **29 pages** | 9 sources · 14 entities · 4 topics
+> 📊 **32 pages** | 10 sources · 16 entities · 4 topics
 
 ---
 
@@ -22,6 +22,7 @@ updated:: [[2026-05-06]]
 | [[how-anthropic-teams-use-claude-code]] | Anthropic 10 个内部团队的 Claude Code 实战报告 | Anthropic PDF |
 | [[bestblogs-2.0-reading-workflow]] | 内容判断才是稀缺资源，BestBlogs 转型为阅读工作流工具 | BestBlogs |
 | [[harness-knowledge-moat]] | Harness 不是目的，知识才是护城河——AI 工程团队的知识沉淀实践 | BestBlogs |
+| [[karpathy-vibe-coding-to-agentic-engineering]] | Vibe Coding 只是开始，真正重要的是 Agentic Engineering | baoyu.io |
 
 ## 🧩 Entities（实体）
 
@@ -41,6 +42,8 @@ updated:: [[2026-05-06]]
 | [[checkpoint-workflow]] | Practice | 频繁提交 Git 检查点、失败时回滚的 Agent 协作安全网 |
 | [[information-filtering]] | Concept | 内容判断能力——信息过载时代真正稀缺的资源 |
 | [[knowledge-lifecycle]] | Concept | 五层存储 × 五种类型 × 三级成熟度 + 自动衰减的团队知识架构 |
+| [[software-3-0]] | Paradigm | LLM 作为新的可编程计算机，context window 作为程序 |
+| [[vibe-coding]] | Practice | 凭感觉编程（Karpathy 提出）vs Agentic Engineering 的下限/上限区分 |
 
 ## 🌐 Topics（主题）
 
@@ -53,7 +56,7 @@ updated:: [[2026-05-06]]
 
 ## 📊 Stats
 
-- Sources: 9
-- Entities: 14
+- Sources: 10
+- Entities: 16
 - Topics: 4
 - Synthesis: 0

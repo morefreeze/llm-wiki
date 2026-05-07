@@ -2,7 +2,7 @@
 type:: Topic
 tags:: #agent #developer-workflow #coding #practices
 created:: [[2026-05-06]]
-sources:: [[10-lessons-for-agentic-coding]] [[how-anthropic-teams-use-claude-code]]
+sources:: [[10-lessons-for-agentic-coding]] [[how-anthropic-teams-use-claude-code]] [[karpathy-vibe-coding-to-agentic-engineering]]
 ---
 
 # Agentic 开发者实践
@@ -76,10 +76,31 @@ Anthropic 内部的显著发现：**非开发者也能受益**
 | [[agent-efficiency]] | token/工具层面的效率 vs 开发者工作流效率，互补视角 |
 | [[agent-production]] | 生产化基础设施（[[harness]]、[[mcp]]）是开发者实践的运行环境 |
 
+## Karpathy 的关键补充（2026 年 4 月）
+
+[[karpathy-vibe-coding-to-agentic-engineering]] 对这个主题做了几个重要补充：
+
+**Vibe Coding vs Agentic Engineering 的清晰区分：**
+- Vibe Coding：抬高所有人做软件的下限（入口变宽）
+- Agentic Engineering：保住专业软件的质量上限（不妥协）
+
+**规格是人最重要的工作：**
+> "细节可以外包，理解不能外包。"
+
+Agent 可以记 API 细节，但人必须理解系统结构（身份归属、内存布局、架构边界）。否则 Agent 会写出"能跑但设计错误"的代码（如用 Stripe 邮箱关联 Google 用户的支付记录）。
+
+**锯齿状智能（Jagged Intelligence）的实践含义：**
+不能因为 Agent 在代码上很强就假设它在所有工程判断上都强。更准确的做法：探索 Agent 的能力边界，知道哪些任务在训练覆盖的"能力高峰"里，哪些在"断崖"旁边。
+
+**AI-native 工程师的面试标准（新视角）：**
+- 旧标准：算法题（测不出 Agentic Engineering 能力）
+- 新标准：大项目（如做一个完整的 Twitter clone）+ 红队攻击（用多个 Agent 去攻击候选人做的系统）
+
 ## 开放问题
-- 随着 Agent 能力提升，"品味"和"经验"的优势会持续多久？
+- 随着 Agent 能力提升，"品味"和"经验"的优势会持续多久？（Karpathy 承认：这取决于实验室是否把审美纳入 RL 训练目标）
 - 端到端测试能否完全替代单元测试，还是两者需要平衡？
 - 非技术人员的 agentic coding 采用会改变软件团队的组织结构吗？
+- Agent-first 基础设施何时出现第一波收敛？（文档、部署、auth、payments 为 Agent 重写）
 
 ## 参见
 - [[agentic-coding]] — 核心概念

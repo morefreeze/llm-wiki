@@ -43,6 +43,19 @@
   - `wiki/topics/information-workflow.md` — 从发现到复用的完整知识输入路径
 - 更新 `index.md`（27 页面，8 资料，13 实体，4 主题）
 
+## [2026-05-07] ingest | Karpathy 最新访谈：Vibe Coding 只是开始，真正重要的是 Agentic Engineering（宝玉整理）
+- 从本地 RSS Pal 数据库提取文章内容（article ID 1108）
+- 添加原始资料到 `_raw/karpathy-vibe-coding-to-agentic-engineering.txt`
+- 创建资料摘要页 `wiki/sources/karpathy-vibe-coding-to-agentic-engineering.md`
+- 创建实体页：
+  - `wiki/entities/software-3-0.md` — Software 1.0/2.0/3.0 范式框架，context window 即程序
+  - `wiki/entities/vibe-coding.md` — Vibe Coding vs Agentic Engineering：下限/上限区分，规格是人的工作
+- 更新实体页：
+  - `wiki/entities/agentic-coding.md` — 补充 Karpathy 的锯齿状智能、Vibe Coding/Agentic Engineering 分层、规格所有权
+- 更新主题页：
+  - `wiki/topics/agentic-developer-practices.md` — 补充 Karpathy 框架（规格所有权、锯齿状智能、AI-native 面试标准）
+- 更新 `index.md`（32 页面，10 资料，16 实体，4 主题）
+
 ## [2026-05-06] ingest | Harness 不是目的，知识才是护城河（stevenpxiao）
 - 从本地 RSS Pal 数据库提取文章内容（article ID 1597）
 - 添加原始资料到 `_raw/harness-knowledge-moat.txt`

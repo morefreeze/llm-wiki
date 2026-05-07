@@ -2,7 +2,7 @@
 type:: Entity
 tags:: #agent #coding #developer-workflow
 created:: [[2026-05-06]]
-sources:: [[10-lessons-for-agentic-coding]]
+sources:: [[10-lessons-for-agentic-coding]], [[karpathy-vibe-coding-to-agentic-engineering]]
 ---
 
 # Agentic Coding（智能体编码）
@@ -35,5 +35,25 @@ sources:: [[10-lessons-for-agentic-coding]]
 - [[living-specs]] — Agentic coding 的核心文档实践
 - [[agent-efficiency]] — Token 和工具层面的效率优化
 
+## Karpathy 的补充框架
+
+[[karpathy-vibe-coding-to-agentic-engineering]] 对 agentic coding 做了重要分层：
+
+- **[[vibe-coding]]**（Karpathy 2025 年提出）：完全放手让模型主导，适合探索性开发和 side project，抬高创作下限
+- **Agentic Engineering**：在使用 Agent 加速的同时，保住专业软件的质量、安全、责任上限
+
+两者的核心区别：是否坚守**规格（spec）是人的工作**这一原则。Agent 填补实现细节，人负责系统边界、数据归属、质量标准。
+
+**锯齿状智能（Jagged Intelligence）** 是 agentic coding 的重要背景：LLM 能力曲线不是平滑上升，而是有高峰（RL 覆盖的可验证领域）和断崖（训练分布外）。开发者需要探索 Agent 的能力边界，知道哪些任务在高峰里，哪些在断崖旁边。
+
+## 关联
+- [[harness]] — Agent 的生产化约束层，与 agentic coding 的工程基础互补
+- [[skills]] — 可复用的 Agent 能力单元，提升编码效率
+- [[living-specs]] — Agentic coding 的核心文档实践
+- [[agent-efficiency]] — Token 和工具层面的效率优化
+- [[vibe-coding]] — Agentic coding 的两种形态：探索性的 Vibe Coding 与专业的 Agentic Engineering
+- [[software-3-0]] — Agentic coding 的范式背景
+
 ## 来源
 - [[10-lessons-for-agentic-coding]] — 10 条开发者实践原则
+- [[karpathy-vibe-coding-to-agentic-engineering]] — Karpathy 的 Vibe Coding vs Agentic Engineering 框架、锯齿状智能、规格所有权
