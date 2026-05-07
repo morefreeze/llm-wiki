@@ -2,7 +2,7 @@
 type:: Topic
 tags:: #agent #developer-workflow #coding #practices
 created:: [[2026-05-06]]
-sources:: [[10-lessons-for-agentic-coding]] [[how-anthropic-teams-use-claude-code]] [[karpathy-vibe-coding-to-agentic-engineering]]
+sources:: [[10-lessons-for-agentic-coding]] [[how-anthropic-teams-use-claude-code]] [[karpathy-vibe-coding-to-agentic-engineering]] [[wip-limit-task-boundaries]] [[feature-list-as-harness-primitive]] [[prevent-premature-completion]] [[e2e-testing-changes-results]] [[session-continuity-across-sessions]] [[initialization-independent-phase]]
 ---
 
 # Agentic 开发者实践
@@ -95,6 +95,18 @@ Agent 可以记 API 细节，但人必须理解系统结构（身份归属、内
 **AI-native 工程师的面试标准（新视角）：**
 - 旧标准：算法题（测不出 Agentic Engineering 能力）
 - 新标准：大项目（如做一个完整的 Twitter clone）+ 红队攻击（用多个 Agent 去攻击候选人做的系统）
+
+## Harness Engineering 课程的补充实践
+
+Learn Harness Engineering 课程对几个关键实践进行了系统化和数据化：
+
+**任务边界控制（[[wip-limit]]）：** WIP=1 是 agent harness 的默认安全设置。Anthropic 数据：使用"小下一步"策略的 agent，任务完成率比宽泛提示高 37%。代码行数和功能完成率呈弱负相关——写得越多，完成得越少。
+
+**完成校验（[[completion-validation]]）：** Agent 系统性地过度自信（Guo et al. 2017）。三层终止校验（静态分析→运行时行为→系统级 E2E）缺一不可。E2E 测试不仅改变检测结果，还改变 agent 的编码行为。Planner+Generator+Evaluator 三 agent 架构（$200/6h）vs 单 agent 裸跑（$9/20min）——功能是否可用天壤之别。
+
+**功能清单原语（[[feature-list-primitive]]）：** 功能清单是 harness 的脊梁骨（行为描述/验证命令/当前状态三元组），减少 60-80% 的会话启动诊断时间，功能完成率比自由形式高 45%。
+
+**跨会话连续性（[[session-continuity]]）：** 独立初始化阶段（自举契约四条件）+ 连续性工件（PROGRESS.md + DECISIONS.md）把重建成本从 15 分钟降到 3 分钟。
 
 ## 开放问题
 - 随着 Agent 能力提升，"品味"和"经验"的优势会持续多久？（Karpathy 承认：这取决于实验室是否把审美纳入 RL 训练目标）

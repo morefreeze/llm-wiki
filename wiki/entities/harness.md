@@ -2,8 +2,8 @@
 type:: Entity
 created:: [[2026-05-06]]
 updated:: [[2026-05-07]]
-sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]], [[coding-agent-components]]
-related:: [[mcp]], [[skills]], [[code-mode]], [[agent]], [[tool-use]], [[safety]], [[knowledge-lifecycle]], [[coding-harness]]
+sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]], [[coding-agent-components]], [[harness-what-it-actually-is]], [[repo-as-system-of-record]], [[instruction-file-architecture]], [[session-continuity-across-sessions]], [[initialization-independent-phase]], [[wip-limit-task-boundaries]], [[feature-list-as-harness-primitive]], [[prevent-premature-completion]], [[e2e-testing-changes-results]], [[harness-observability]], [[clean-session-state]]
+related:: [[mcp]], [[skills]], [[code-mode]], [[agent]], [[tool-use]], [[safety]], [[knowledge-lifecycle]], [[coding-harness]], [[harness-5-subsystems]], [[repo-as-system-of-record]], [[instruction-architecture]], [[session-continuity]], [[wip-limit]], [[feature-list-primitive]], [[completion-validation]], [[harness-observability]], [[clean-session-state]]
 ---
 
 # Harness（驾驭层）
@@ -89,6 +89,23 @@ Harness 的三支柱中，知识管理并非附属品：
 
 → 详见 [[coding-harness]] 获取六大核心组件的完整拆解
 
+## Learn Harness Engineering 课程视角（五子系统模型）
+
+[[harness-what-it-actually-is]] 提出了一个系统性的五子系统模型，把 Harness 从抽象概念变成可检查的具体组件：
+
+> **Harness 不是一个 prompt 文件——缺少任何一个子系统都不是完整的 Harness。**
+
+详见 [[harness-5-subsystems]]。该课程还给出了 harness 工程完整实践路径：
+
+- **[[repo-as-system-of-record]]** — 仓库即规范，知识可见性缺口，冷启动测试
+- **[[instruction-architecture]]** — 路由文件 + 渐进式披露，防止指令膨胀
+- **[[session-continuity]]** — 跨会话连续性工件（PROGRESS.md + DECISIONS.md）
+- **[[wip-limit]]** — WIP=1，Overreach 和 Under-finish，完成证据
+- **[[feature-list-primitive]]** — 功能清单三元组（行为/验证/状态）作为 harness 原语
+- **[[completion-validation]]** — 三层终止校验 + E2E 测试 + Planner/Generator/Evaluator 架构
+- **[[harness-observability]]** — 双层可观测性（运行时 + 过程）+ 冲刺合同
+- **[[clean-session-state]]** — 清洁状态五维度 + 会话完整性 + harness 简化原则
+
 ## 参考来源
 
 - [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]] — 系统性阐述 Harness Engineering 的工程实践
@@ -96,3 +113,5 @@ Harness 的三支柱中，知识管理并非附属品：
 - [[Anthropic-MCP-博客]] — 间接涉及安全、认证、可控性等 Harness 关注的核心议题
 - [[harness-knowledge-moat]] — 知识沉淀才是 Harness 的真正目的，AI Team 落地实践
 - [[coding-agent-components]] — Raschka 的六大组件框架，Harness 比模型更重要的论证
+- [[harness-what-it-actually-is]] — 五子系统模型（厨房类比）+ 4 阶段实验数据（20%→100%）
+- [[clean-session-state]] — 清洁状态五维度 + 12 周熵增数据

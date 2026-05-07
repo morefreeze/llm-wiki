@@ -2,7 +2,7 @@
 type:: Topic
 tags:: #agent #production #mcp #safety #knowledge
 created:: [[2026-05-06]]
-sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]] [[harness-knowledge-moat]]
+sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]] [[harness-knowledge-moat]] [[harness-what-it-actually-is]] [[repo-as-system-of-record]] [[clean-session-state]]
 ---
 
 # Agent 生产化
@@ -54,9 +54,19 @@ Agent 从「玩具」到「生产」需要解决三个关键问题：
 
 Big Model vs Big Harness 的务实立场：知识工程的投入是**确定性回报**（每条 proven 知识让所有后续工作流受益），模型提升是概率性回报（不知道下一代模型在你的特定场景上是否更好）。
 
+## Harness Engineering 课程：生产化的系统化路径
+
+[[harness-5-subsystems]] 把 Harness 拆解为五个可检查的子系统，并给出了量化数据（成功率 20%→100%）。生产化路径上的关键实践：
+
+- **[[repo-as-system-of-record]]**：仓库即规范——知识可见性缺口 + 冷启动测试（5问判断仓库质量）+ 知识衰减率（20%/月），人工介入降低 60%
+- **[[session-continuity]]**：跨会话连续性——PROGRESS.md + DECISIONS.md + 上下文焦虑 + 漂移，重建时间从 15 分钟降到 3 分钟（78%降低）
+- **[[clean-session-state]]**：清洁状态五维度——12 周熵增数据（构建从 100% 降到 68%）+ 双模式清理策略 + harness 简化原则
+- **[[harness-observability]]**：可观测性——双层（运行时+过程）+ 冲刺合同 + Anthropic 三 agent 实验（3h50m，$124.70）
+
 ## 参见
 - [[mcp]] — Model Context Protocol
 - [[harness]] — Agent 驾驭层
+- [[harness-5-subsystems]] — 五子系统模型（指令/工具/环境/状态/反馈）
 - [[knowledge-lifecycle]] — 五层 × 五型 × 三级成熟度知识架构
 - [[skills]] — 可复用能力
 - [[plugin]] — Skills + MCP 打包

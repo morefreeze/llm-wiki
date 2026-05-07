@@ -2,6 +2,38 @@
 
 ---
 
+## [2026-05-07] ingest | Learn Harness Engineering L02-L12（walkinglabs.github.io）
+- 批量接收 11 篇 Learn Harness Engineering 课程文章（article ID 1880-1890）
+- 添加原始资料到 `_raw/`：harness-what-it-actually-is.txt、repo-as-system-of-record.txt、instruction-file-architecture.txt、session-continuity-across-sessions.txt、initialization-independent-phase.txt、wip-limit-task-boundaries.txt、feature-list-as-harness-primitive.txt、prevent-premature-completion.txt、e2e-testing-changes-results.txt、harness-observability.txt、clean-session-state.txt
+- 创建资料摘要页（11个）：
+  - `wiki/sources/harness-what-it-actually-is.md` — L02：五子系统模型 + 4 阶段实验（20%→100%）
+  - `wiki/sources/repo-as-system-of-record.md` — L03：知识可见性缺口 + 冷启动测试 + 知识衰减率
+  - `wiki/sources/instruction-file-architecture.md` — L04：路由文件 + 中间迷失效应（Liu 2023）+ 渐进式披露
+  - `wiki/sources/session-continuity-across-sessions.md` — L05：连续性工件 + 上下文焦虑 + 漂移
+  - `wiki/sources/initialization-independent-phase.md` — L06：自举契约四条件 + 冷/热启动
+  - `wiki/sources/wip-limit-task-boundaries.md` — L07：WIP=1 + Overreach + Under-finish + VCR
+  - `wiki/sources/feature-list-as-harness-primitive.md` — L08：功能清单三元组 + 状态机 + 通过状态门控
+  - `wiki/sources/prevent-premature-completion.md` — L09：置信度校准偏差 + 三层终止校验 + 三 agent 架构
+  - `wiki/sources/e2e-testing-changes-results.md` — L10：单元测试盲区 + E2E 改变行为 + 架构边界执行
+  - `wiki/sources/harness-observability.md` — L11：双层可观测性 + 冲刺合同 + Anthropic 三 agent 实验
+  - `wiki/sources/clean-session-state.md` — L12：清洁状态五维度 + 12 周熵增数据 + harness 简化
+- 创建实体页（9个）：
+  - `wiki/entities/harness-5-subsystems.md` — 五子系统模型 + 厨房类比
+  - `wiki/entities/repo-as-system-of-record.md` — 仓库即规范 + ACID 状态管理
+  - `wiki/entities/instruction-architecture.md` — 路由文件 + 渐进式披露 + 中间迷失效应
+  - `wiki/entities/session-continuity.md` — 跨会话连续性 + 自举契约 + 上下文焦虑
+  - `wiki/entities/wip-limit.md` — WIP=1 + Overreach/Under-finish + 完成证据
+  - `wiki/entities/feature-list-primitive.md` — 功能清单原语 + 三元组结构 + 通过状态门控
+  - `wiki/entities/completion-validation.md` — 三层终止校验 + E2E + Planner/Generator/Evaluator
+  - `wiki/entities/harness-observability.md` — 双层可观测性 + 冲刺合同 + 任务轨迹
+  - `wiki/entities/clean-session-state.md` — 清洁状态五维度 + 幂等清理 + harness 简化
+- 更新实体页：
+  - `wiki/entities/harness.md` — 补充 Learn Harness Engineering 课程视角 + 五子系统参考 + 相关实体链接
+- 更新主题页：
+  - `wiki/topics/agent-production.md` — 补充 harness 工程实践路径（仓库即规范/会话连续性/清洁状态/可观测性）
+  - `wiki/topics/agentic-developer-practices.md` — 补充 WIP 限制/完成校验/功能清单/跨会话连续性实践
+- 更新 `index.md`（56 页面，23 资料，27 实体，4 主题）
+
 ## [2026-05-07] ingest | 编程智能体的核心组件（Sebastian Raschka / 宝玉译）
 - 从本地 RSS Pal 数据库提取文章内容（article ID 1561）
 - 添加原始资料到 `_raw/coding-agent-components.txt`
