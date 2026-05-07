@@ -2,6 +2,18 @@
 
 ---
 
+## [2026-05-07] ingest | 编程智能体的核心组件（Sebastian Raschka / 宝玉译）
+- 从本地 RSS Pal 数据库提取文章内容（article ID 1561）
+- 添加原始资料到 `_raw/coding-agent-components.txt`
+- 创建资料摘要页 `wiki/sources/coding-agent-components.md`
+- 创建实体页：
+  - `wiki/entities/coding-harness.md` — 编程 Agent 六大组件架构 + LLM→推理模型→Agent→Agent harness→Coding harness 层次分类
+- 更新实体页：
+  - `wiki/entities/harness.md` — 补充 Raschka 的 Harness 层次分类和 Coding harness 特化视角
+- 更新主题页：
+  - `wiki/topics/agent-efficiency.md` — 补充 Context Bloat 管理三策略（截断/摘要/去重）
+- 更新 `index.md`（36 页面，12 资料，18 实体，4 主题）
+
 ## [2026-05-06] init | 创建 LLM Wiki
 - 初始化仓库结构：`raw/`、`wiki/`（entities/topics/sources/synthesis/）
 - 创建 `AGENTS.md`（Schema）、`index.md`、`log.md`

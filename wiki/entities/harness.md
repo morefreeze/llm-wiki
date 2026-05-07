@@ -1,8 +1,9 @@
 ---
 type:: Entity
 created:: [[2026-05-06]]
-sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]]
-related:: [[mcp]], [[skills]], [[code-mode]], [[agent]], [[tool-use]], [[safety]], [[knowledge-lifecycle]]
+updated:: [[2026-05-07]]
+sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]], [[coding-agent-components]]
+related:: [[mcp]], [[skills]], [[code-mode]], [[agent]], [[tool-use]], [[safety]], [[knowledge-lifecycle]], [[coding-harness]]
 ---
 
 # Harness（驾驭层）
@@ -70,9 +71,28 @@ Harness 的三支柱中，知识管理并非附属品：
 
 这意味着 [[knowledge-lifecycle]]（五层存储 × 五种类型 × 三级成熟度）本身就是 Harness Engineering 的核心基础设施，而非可选项。模型会迭代，工作流会重构，但团队的领域知识积累——领域模型、架构决策、最佳实践、已知陷阱——是永恒有价值的。
 
+## Harness 层次分类（Raschka 的补充视角）
+
+[[coding-agent-components]] 提供了 Harness 从底层到特化的完整层次：
+
+| 层级 | 定义 |
+|------|------|
+| LLM | 基础模型（下一词预测器） |
+| 推理模型 | LLM + test-time compute |
+| Agent | 模型 + 工具 + 记忆 + 环境反馈 |
+| **Agent harness** | 管理上下文/工具/状态/控制流的软件脚手架 |
+| **Coding harness** | Agent harness 的软件工程特化版 |
+
+> **"更好的 LLM 为推理模型打下更坚实的基础，而优秀的 Harness 把推理模型的潜力压榨到极致。"** —— Sebastian Raschka
+
+在前沿模型能力已经非常接近的今天，Harness 工程质量才是真正的竞争壁垒。
+
+→ 详见 [[coding-harness]] 获取六大核心组件的完整拆解
+
 ## 参考来源
 
 - [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]] — 系统性阐述 Harness Engineering 的工程实践
 - [[当我们在讨论Harness的时候我们在讨论什么]] — MiniMax × Hermes Agent 对谈，厘清 Harness 的概念边界
 - [[Anthropic-MCP-博客]] — 间接涉及安全、认证、可控性等 Harness 关注的核心议题
 - [[harness-knowledge-moat]] — 知识沉淀才是 Harness 的真正目的，AI Team 落地实践
+- [[coding-agent-components]] — Raschka 的六大组件框架，Harness 比模型更重要的论证
