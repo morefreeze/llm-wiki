@@ -1,8 +1,8 @@
 ---
 type:: Topic
-tags:: #agent #production #mcp #safety
+tags:: #agent #production #mcp #safety #knowledge
 created:: [[2026-05-06]]
-sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]]
+sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]] [[harness-knowledge-moat]]
 ---
 
 # Agent 生产化
@@ -39,9 +39,25 @@ Agent 从「玩具」到「生产」需要解决三个关键问题：
 - Claude MCP 目录：200+ 个 server
 - 兼容客户端：Claude、ChatGPT、Cursor、VS Code 等
 
+## 知识作为生产化的真正护城河
+
+[[harness-knowledge-moat]] 补充了生产化路径上被低估的一层：
+
+> **Harness 不是目的，知识才是护城河。**
+
+工作流是可替换的（今天 16 阶段状态机，明天图结构 DAG），但团队积累的领域知识是永恒有价值的。没有知识闭环的 Agent 工作流是"一次性"的——每次都从零开始，每次都踩同样的坑。
+
+生产化 Agent 系统的完整路径：
+1. **连接层**（[[mcp]] / MCP Server）— Agent 如何可靠连接外部系统
+2. **驾驭层**（[[harness]]）— Agent 如何安全、可控地使用能力
+3. **知识层**（[[knowledge-lifecycle]]）— 每次交付如何自动沉淀知识，让系统越用越聪明
+
+Big Model vs Big Harness 的务实立场：知识工程的投入是**确定性回报**（每条 proven 知识让所有后续工作流受益），模型提升是概率性回报（不知道下一代模型在你的特定场景上是否更好）。
+
 ## 参见
 - [[mcp]] — Model Context Protocol
 - [[harness]] — Agent 驾驭层
+- [[knowledge-lifecycle]] — 五层 × 五型 × 三级成熟度知识架构
 - [[skills]] — 可复用能力
 - [[plugin]] — Skills + MCP 打包
 - [[agent-efficiency]] — Agent 效率优化

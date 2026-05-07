@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-07]]
+updated:: [[2026-05-06]]
 ---
 
 # LLM Wiki Index
 
-> 📊 **27 pages** | 8 sources · 13 entities · 4 topics
+> 📊 **29 pages** | 9 sources · 14 entities · 4 topics
 
 ---
 
@@ -21,6 +21,7 @@ updated:: [[2026-05-07]]
 | [[10-lessons-for-agentic-coding]] | 代码廉价时代开发者的 10 条实践原则 | dbreunig.com |
 | [[how-anthropic-teams-use-claude-code]] | Anthropic 10 个内部团队的 Claude Code 实战报告 | Anthropic PDF |
 | [[bestblogs-2.0-reading-workflow]] | 内容判断才是稀缺资源，BestBlogs 转型为阅读工作流工具 | BestBlogs |
+| [[harness-knowledge-moat]] | Harness 不是目的，知识才是护城河——AI 工程团队的知识沉淀实践 | BestBlogs |
 
 ## 🧩 Entities（实体）
 
@@ -39,6 +40,7 @@ updated:: [[2026-05-07]]
 | [[claude-md-files]] | Practice | 持久化 Agent 上下文的 Markdown 文件，持续改进飞轮 |
 | [[checkpoint-workflow]] | Practice | 频繁提交 Git 检查点、失败时回滚的 Agent 协作安全网 |
 | [[information-filtering]] | Concept | 内容判断能力——信息过载时代真正稀缺的资源 |
+| [[knowledge-lifecycle]] | Concept | 五层存储 × 五种类型 × 三级成熟度 + 自动衰减的团队知识架构 |
 
 ## 🌐 Topics（主题）
 
@@ -51,7 +53,7 @@ updated:: [[2026-05-07]]
 
 ## 📊 Stats
 
-- Sources: 8
-- Entities: 13
+- Sources: 9
+- Entities: 14
 - Topics: 4
 - Synthesis: 0

@@ -43,6 +43,18 @@
   - `wiki/topics/information-workflow.md` — 从发现到复用的完整知识输入路径
 - 更新 `index.md`（27 页面，8 资料，13 实体，4 主题）
 
+## [2026-05-06] ingest | Harness 不是目的，知识才是护城河（stevenpxiao）
+- 从本地 RSS Pal 数据库提取文章内容（article ID 1597）
+- 添加原始资料到 `_raw/harness-knowledge-moat.txt`
+- 创建资料摘要页 `wiki/sources/harness-knowledge-moat.md`
+- 创建实体页：
+  - `wiki/entities/knowledge-lifecycle.md` — 五层存储 × 五种类型 × 三级成熟度 + 自动衰减的团队知识架构
+- 更新实体页：
+  - `wiki/entities/harness.md` — 补充"知识作为 Harness 核心组成"视角，Harness 三支柱与知识管理的关系
+- 更新主题页：
+  - `wiki/topics/agent-production.md` — 补充知识层作为 Agent 生产化完整路径的第三层
+- 更新 `index.md`（29 页面，9 资料，14 实体，4 主题）
+
 ## [2026-05-06] ingest | How Anthropic Teams Use Claude Code (Anthropic PDF)
 - 添加原始资料到 `_raw/how-anthropic-teams-use-claude-code.md`（从 PDF 提取）
 - 创建资料摘要页 `wiki/sources/how-anthropic-teams-use-claude-code.md`
