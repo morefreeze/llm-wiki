@@ -13,17 +13,22 @@
 
 ```
 llm-wiki/
-├── AGENTS.md          ← Schema（本文件）：告诉 LLM 如何维护 wiki
-├── index.md           ← 内容目录：所有页面的链接和摘要
-├── log.md             ← 时间日志：append-only 操作记录
-├── _raw/              ← 原始资料（不可变，只读）
-│   └── <source>.txt   ← 使用 .txt 扩展名（避免 Logseq 索引冲突）
-└── wiki/              ← LLM 生成的 wiki 页面（LLM 拥有此层）
-    ├── entities/      ← 实体页（人物、项目、工具、概念）
-    ├── topics/        ← 主题页（综述、比较、分析）
-    ├── sources/       ← 资料摘要页
-    └── synthesis/     ← 综合分析页（跨源整合）
+├── AGENTS.md              ← Schema（本文件）：告诉 LLM 如何维护 wiki
+├── index.md               ← 内容目录：所有页面的链接和摘要
+├── log.md                 ← 时间日志：append-only 操作记录
+├── _raw/                  ← 原始资料（不可变，只读）
+│   └── <source>.txt       ← 使用 .txt 扩展名（避免 Logseq 索引冲突）
+└── wiki/                  ← LLM 生成的 wiki 页面（LLM 拥有此层）
+    ├── entity___<name>.md ← 实体页（概念词条），Logseq 引用：[[entity/<name>]]
+    ├── source___<name>.md ← 资料摘要页，Logseq 引用：[[source/<name>]]
+    ├── topic___<name>.md  ← 主题综述页，Logseq 引用：[[topic/<name>]]
+    └── synthesis___<name>.md ← 综合分析页，Logseq 引用：[[synthesis/<name>]]
 ```
+
+**Logseq 命名规范**：wiki/ 目录下使用平铺结构，以 `___`（三下划线）代替路径分隔符：
+- 文件：`entity___harness.md`  →  Logseq 链接：`[[entity/harness]]`
+- 文件：`source___llm-wiki-pattern.md`  →  Logseq 链接：`[[source/llm-wiki-pattern]]`
+- 文件：`topic___agent-production.md`  →  Logseq 链接：`[[topic/agent-production]]`
 
 ## Logseq 集成
 
@@ -38,8 +43,8 @@ llm-wiki/
 ### Ingest（摄入）
 1. 用户将原始资料放入 `_raw/`
 2. LLM 阅读资料，讨论关键要点
-3. 写入摘要页 `wiki/sources/<title>.md`
-4. 更新 `wiki/entities/` 和 `wiki/topics/` 中的相关页面
+3. 写入摘要页 `wiki/source___<title>.md`（Logseq 链接：`[[source/<title>]]`）
+4. 更新/新建 `wiki/entity___<name>.md` 和 `wiki/topic___<name>.md`
 5. 更新 `index.md`
 6. 追加记录到 `log.md`
 
