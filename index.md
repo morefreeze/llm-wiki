@@ -5,7 +5,7 @@ updated:: [[2026-05-07]]
 
 - # LLM Wiki Index
   
-  > 📊 **56 pages** | 23 sources · 27 entities · 4 topics
+  > 📊 **57 pages** | 23 sources · 27 entities · 5 topics
   
   ---
 - ## 📚 Sources（资料）
@@ -74,8 +74,9 @@ updated:: [[2026-05-07]]
   | [[topic/agent-production]] | Agent 从玩具到生产化的路径 | [[entity/mcp]] [[entity/harness]] [[entity/harness-5-subsystems]] [[entity/session-continuity]] [[entity/clean-session-state]] |
   | [[topic/agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[entity/agentic-coding]] [[entity/wip-limit]] [[entity/completion-validation]] [[entity/feature-list-primitive]] [[entity/session-continuity]] |
   | [[topic/information-workflow]] | 从发现到复用的完整知识输入路径 | [[entity/information-filtering]] [[source/llm-wiki-pattern]] |
+  | [[topic/harness-engineering]] | AI coding agent 长期可靠运行的系统化框架设计（11 讲课程） | [[entity/harness-5-subsystems]] [[entity/session-continuity]] [[entity/wip-limit]] [[entity/clean-session-state]] |
 - ## 📊 Stats
 - Sources: 23
 - Entities: 27
-- Topics: 4
+- Topics: 5
 - Synthesis: 0
