@@ -47,6 +47,7 @@ llm-wiki/
 4. 更新/新建 `wiki/entity___<name>.md` 和 `wiki/topic___<name>.md`
 5. 更新 `index.md`
 6. 追加记录到 `log.md`
+7. 如有新增 topic 或重要 entity，同步更新 `pages/contents.md`（Logseq 侧边栏导航页，面向用户）
 
 ### Query（查询）
 1. LLM 搜索 `index.md` 找到相关页面

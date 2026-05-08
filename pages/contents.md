@@ -1,1 +1,20 @@
-- foobar
+- ## 🌐 Topics
+	- [[topic/harness-engineering]] — AI coding agent 长期可靠运行框架（11 讲课程）
+	- [[topic/agent-production]] — Agent 从玩具到生产化
+	- [[topic/agentic-developer-practices]] — 代码廉价时代开发者实践
+	- [[topic/agent-efficiency]] — Agent 规模化效率优化
+	- [[topic/information-workflow]] — 从发现到复用的知识输入路径
+- ---
+- ## 🧩 常用 Entities
+	- [[entity/harness]] — 驾驭层核心概念
+	- [[entity/harness-5-subsystems]] — 五子系统模型
+	- [[entity/session-continuity]] — 跨会话连续性
+	- [[entity/completion-validation]] — 完成校验
+	- [[entity/wip-limit]] — WIP=1 任务边界
+	- [[entity/repo-as-system-of-record]] — 仓库即规范
+	- [[entity/mcp]] — Model Context Protocol
+	- [[entity/agentic-coding]] — Agentic 开发范式
+- ---
+- ## 📋 Wiki 管理
+	- [[index]] — 完整页面目录（LLM 用）
+	- [[log]] — 操作日志
