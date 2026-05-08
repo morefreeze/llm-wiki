@@ -2,7 +2,7 @@
 type:: Entity
 tags:: #agent #coding #developer-workflow
 created:: [[2026-05-06]]
-sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-coding-to-agentic-engineering]]
+sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-coding-to-agentic-engineering]], [[source/coding-agents-101-devin]], [[source/good-context-good-code]], [[source/how-anthropic-teams-use-claude-code]]
 ---
 
 - # Agentic Coding（智能体编码）
@@ -24,11 +24,27 @@ sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-codin
 - 技术债和维护负担
 - 安全漏洞风险
 - 超出支持能力的产品规模
+- ## Devin/Cognition 的补充：有效管理 Coding Agent
+  来源：[[source/coding-agents-101-devin]]
+  
+  **四条基本规则**：
+  1. 任务需有明确的验收标准（可测试、可验证）
+  2. 在计划阶段让 Agent 生成详细执行计划，先确认后执行
+  3. 在实现阶段分块推进，每块完成后做检查点
+  4. 高风险操作（部署、数据库写入）始终保留人工确认
+
+  **最佳任务规模**：1-6 小时范围内产出 ROI 最高；过小则 overhead 浪费大，过大则容易失控。
+
 - ## 关联
 - [[entity/harness]] — Agent 的生产化约束层，与 agentic coding 的工程基础互补
 - [[entity/skills]] — 可复用的 Agent 能力单元，提升编码效率
 - [[entity/living-specs]] — Agentic coding 的核心文档实践
+- [[entity/context-engineering]] — Context Engineering 是 Agentic Coding 的基础设施
+- [[entity/ai-native-development]] — Agentic Coding 的团队扩展形式：AI-Native Development
+- [[entity/secure-vibe-coding]] — Agentic Coding 的安全约束层
 - [[topic/agent-efficiency]] — Token 和工具层面的效率优化
+- [[topic/cs146s-modern-software-developer]] — CS146S 贯穿全课程的核心主题
+
 - ## Karpathy 的补充框架
   
   [[source/karpathy-vibe-coding-to-agentic-engineering]] 对 agentic coding 做了重要分层：
@@ -42,9 +58,17 @@ sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-codin
 - [[entity/harness]] — Agent 的生产化约束层，与 agentic coding 的工程基础互补
 - [[entity/skills]] — 可复用的 Agent 能力单元，提升编码效率
 - [[entity/living-specs]] — Agentic coding 的核心文档实践
+- [[entity/context-engineering]] — Context Engineering 是 Agentic Coding 的基础设施
+- [[entity/ai-native-development]] — Agentic Coding 的团队扩展形式：AI-Native Development
+- [[entity/secure-vibe-coding]] — Agentic Coding 的安全约束层
 - [[topic/agent-efficiency]] — Token 和工具层面的效率优化
 - [[entity/vibe-coding]] — Agentic coding 的两种形态：探索性的 Vibe Coding 与专业的 Agentic Engineering
 - [[entity/software-3-0]] — Agentic coding 的范式背景
+- [[topic/cs146s-modern-software-developer]] — CS146S 贯穿全课程的核心主题
+
 - ## 来源
 - [[source/10-lessons-for-agentic-coding]] — 10 条开发者实践原则
 - [[source/karpathy-vibe-coding-to-agentic-engineering]] — Karpathy 的 Vibe Coding vs Agentic Engineering 框架、锯齿状智能、规格所有权
+- [[source/coding-agents-101-devin]] — Devin/Cognition：有效管理 Coding Agent 的四条规则与检查点架构
+- [[source/good-context-good-code]] — StockApp：AI 原生团队 2.5x 生产力实践
+- [[source/how-anthropic-teams-use-claude-code]] — Anthropic 10 个内部团队的 Claude Code 实战报告

@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-07]]
+updated:: [[2026-05-08]]
 ---
 
 - # LLM Wiki Index
   
-  > 📊 **57 pages** | 23 sources · 27 entities · 5 topics
+  > 📊 **76 pages** | 39 sources · 30 entities · 6 topics
   
   ---
 - ## 📚 Sources（资料）
@@ -35,6 +35,23 @@ updated:: [[2026-05-07]]
   | [[source/e2e-testing-changes-results]] | E2E 测试不仅改变结果还改变 agent 编码行为 + 架构边界执行规则 | walkinglabs.github.io |
   | [[source/why-observability-belongs-in-harness]] | 双层可观测性 + 冲刺合同 + Anthropic 三 agent 实验（3h50m，$124.70） | walkinglabs.github.io |
   | [[source/why-sessions-must-leave-clean-state]] | 清洁状态五维度 + 12 周熵增数据 + harness 简化原则（Lehman 定律） | walkinglabs.github.io |
+  | **CS146S 课程读物** | | |
+  | [[source/mcp-introduction-stytch]] | MCP 综合介绍：USB-C 类比，JSON-RPC 2.0，OAuth 认证（Stytch） | CS146S Week 2 |
+  | [[source/apis-dont-make-good-mcp-tools]] | 直接把 API 转成 MCP 工具效果差：Tool 爆炸、Context 宽度、格式低效 | CS146S Week 2 |
+  | [[source/specs-are-the-new-source-code]] | Spec 是新的源代码，代码是有损投影；代码廉价时 Spec 才是真正稀缺资产 | CS146S Week 3 |
+  | [[source/how-long-contexts-fail]] | 四种 Context 失效：Poisoning/Distraction/Confusion/Clash；39% 性能下降 | CS146S Week 3 |
+  | [[source/writing-tools-for-agents]] | 为 Agent 编写高效工具五原则：精选/命名/语义返回/Token 效率/描述工程 | CS146S Week 3 |
+  | [[source/coding-agents-101-devin]] | Devin 视角：有效管理 Coding Agent 的四条规则与检查点架构 | CS146S Week 3 |
+  | [[source/good-context-good-code]] | StockApp AI 原生开发：13 周 1098 PRs，2.5x 生产力，五大团队原则 | CS146S Week 4 |
+  | [[source/peeking-under-the-hood-of-claude-code]] | 用 LiteLLM 代理揭秘 Claude Code 内部机制：前置上下文、注入检测、子 Agent | CS146S Week 4 |
+  | [[source/copilot-rce-via-prompt-injection]] | CVE-2025-53773：Copilot YOLO 模式 Prompt Injection → RCE 完整攻击链 | CS146S Week 6 |
+  | [[source/finding-vulnerabilities-with-ai-coding-agents]] | Semgrep：Claude Code 在 11 个项目中发现 46 个真实漏洞（14% TPR） | CS146S Week 6 |
+  | [[source/context-rot]] | Context Rot：上下文越长性能越差，位置效应，18 个模型均受影响（Chroma） | CS146S Week 6 |
+  | [[source/code-reviews-just-do-it]] | 代码检查缺陷发现率 55-60%，远超单元测试 25%（Jeff Atwood） | CS146S Week 7 |
+  | [[source/how-to-review-code-effectively]] | GitHub Staff Engineer：7000+ PR 评审哲学，区分 Blocker 与建议 | CS146S Week 7 |
+  | [[source/ai-code-review-best-practices]] | Graphite：AI 代码评审三步集成路线，70-90% 准确率，告警疲劳风险 | CS146S Week 7 |
+  | [[source/sre-introduction]] | Google SRE Book 导论：Error Budget、50% Ops Cap、SLI/SLO/SLA | CS146S Week 9 |
+  | [[source/observability-basics-traces-spans]] | Traces & Spans：分布式追踪基础，OpenTelemetry，三信号关联 | CS146S Week 9 |
 - ## 🧩 Entities（实体）
   
   | 页面 | 类型 | 核心定义 |
@@ -66,6 +83,10 @@ updated:: [[2026-05-07]]
   | [[entity/completion-validation]] | Practice | 三层终止校验 + E2E 测试 + Planner/Generator/Evaluator 架构 |
   | [[entity/harness-observability]] | Pattern | 双层可观测性（运行时+过程）+ 冲刺合同 + 任务轨迹 |
   | [[entity/clean-session-state]] | Practice | 清洁状态五维度 + 会话完整性 + 质量文档 + 幂等清理 |
+  | **CS146S 新增实体** | | |
+  | [[entity/context-engineering]] | Paradigm | Context Engineering：系统化管理 LLM 完整输入，四种失效模式 |
+  | [[entity/secure-vibe-coding]] | Practice | AI 编码时代安全实践：Prompt Injection → RCE，AI 辅助漏洞检测 |
+  | [[entity/ai-native-development]] | Culture | AI 原生开发文化：团队级 2.5x 生产力，Monorepo + MCP 生态 + 集成评审 |
 - ## 🌐 Topics（主题）
   
   | 页面 | 核心问题 | 涉及实体 |
@@ -75,8 +96,9 @@ updated:: [[2026-05-07]]
   | [[topic/agentic-developer-practices]] | 代码廉价时代开发者如何调整工作方式 | [[entity/agentic-coding]] [[entity/wip-limit]] [[entity/completion-validation]] [[entity/feature-list-primitive]] [[entity/session-continuity]] |
   | [[topic/information-workflow]] | 从发现到复用的完整知识输入路径 | [[entity/information-filtering]] [[source/llm-wiki-pattern]] |
   | [[topic/harness-engineering]] | AI coding agent 长期可靠运行的系统化框架设计（11 讲课程） | [[entity/harness-5-subsystems]] [[entity/session-continuity]] [[entity/wip-limit]] [[entity/clean-session-state]] |
+  | [[topic/cs146s-modern-software-developer]] | Stanford CS146S：10 周 AI 辅助软件开发全生命周期课程 | [[entity/context-engineering]] [[entity/mcp]] [[entity/agentic-coding]] [[entity/secure-vibe-coding]] [[entity/ai-native-development]] |
 - ## 📊 Stats
-- Sources: 23
-- Entities: 27
-- Topics: 5
+- Sources: 39
+- Entities: 30
+- Topics: 6
 - Synthesis: 0

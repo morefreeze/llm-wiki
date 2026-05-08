@@ -1,4 +1,5 @@
 ## topic
+	- [[topic/cs146s-modern-software-developer]] — Stanford CS146S：AI 辅助软件开发全生命周期
 	- [[topic/harness-engineering]] — AI coding agent 长期可靠运行框架（11 讲课程）
 	- [[topic/agent-production]] — Agent 从玩具到生产化
 	- [[topic/agentic-developer-practices]] — 代码廉价时代开发者实践
@@ -6,6 +7,9 @@
 	- [[topic/information-workflow]] — 从发现到复用的知识输入路径
 - ---
 - ## 🧩 常用 Entities
+	- [[entity/context-engineering]] — Context Engineering：系统化管理 LLM 上下文
+	- [[entity/secure-vibe-coding]] — AI 编码安全：Prompt Injection → RCE
+	- [[entity/ai-native-development]] — AI 原生开发文化：2.5x 生产力
 	- [[entity/harness]] — 驾驭层核心概念
 	- [[entity/harness-5-subsystems]] — 五子系统模型
 	- [[entity/session-continuity]] — 跨会话连续性

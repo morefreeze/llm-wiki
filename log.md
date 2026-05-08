@@ -2,6 +2,37 @@
 
 ---
 
+## [2026-05-08] ingest | CS146S: The Modern Software Developer（Stanford，themodernsoftware.dev）
+- 摄入来源：Stanford CS146S Fall 2025 课程网站（themodernsoftware.dev），JS bundle 解析提取完整课程内容
+- 创建主题页：
+  - `wiki/topic___cs146s-modern-software-developer.md` — 10 周课程综述，全部读物/讲义/嘉宾
+- 创建资料摘要页（16 个）：
+  - Week 2: `wiki/source___mcp-introduction-stytch.md` — MCP 综合介绍（USB-C 类比，JSON-RPC，OAuth）
+  - Week 2: `wiki/source___apis-dont-make-good-mcp-tools.md` — API→MCP 反模式（Tool 爆炸/Context 宽度/格式低效）
+  - Week 3: `wiki/source___specs-are-the-new-source-code.md` — Spec 是新的源代码，代码是有损投影
+  - Week 3: `wiki/source___how-long-contexts-fail.md` — 四种 Context 失效：Poisoning/Distraction/Confusion/Clash
+  - Week 3: `wiki/source___writing-tools-for-agents.md` — 为 Agent 编写工具五原则（Anthropic）
+  - Week 3: `wiki/source___coding-agents-101-devin.md` — 有效管理 Coding Agent：四条规则 + 检查点架构
+  - Week 4: `wiki/source___good-context-good-code.md` — StockApp：13 周 1098 PRs，2.5x 生产力
+  - Week 4: `wiki/source___peeking-under-the-hood-of-claude-code.md` — LiteLLM 代理揭秘 Claude Code 内部机制
+  - Week 6: `wiki/source___copilot-rce-via-prompt-injection.md` — CVE-2025-53773：YOLO 模式 Prompt Injection → RCE
+  - Week 6: `wiki/source___finding-vulnerabilities-with-ai-coding-agents.md` — Semgrep：46 个真实漏洞，14% TPR
+  - Week 6: `wiki/source___context-rot.md` — Context Rot：位置效应 + 非均匀退化（18 个模型）
+  - Week 7: `wiki/source___code-reviews-just-do-it.md` — 代码检查发现率 55-60%，远超单元测试（Jeff Atwood）
+  - Week 7: `wiki/source___how-to-review-code-effectively.md` — GitHub Staff Engineer 7000+ PR 评审哲学
+  - Week 7: `wiki/source___ai-code-review-best-practices.md` — Graphite：AI 代码评审三步集成路线
+  - Week 9: `wiki/source___sre-introduction.md` — Google SRE Book：Error Budget、50% Ops Cap、SLI/SLO/SLA
+  - Week 9: `wiki/source___observability-basics-traces-spans.md` — Traces & Spans，OpenTelemetry，三信号关联
+- 创建实体页（3 个）：
+  - `wiki/entity___context-engineering.md` — Context Engineering 范式：四种失效模式 + 修复策略
+  - `wiki/entity___secure-vibe-coding.md` — AI 编码安全：Prompt Injection → RCE + AI 辅助漏洞检测
+  - `wiki/entity___ai-native-development.md` — AI 原生开发文化：StockApp 2.5x 生产力 + 五大原则
+- 更新实体页（2 个）：
+  - `wiki/entity___mcp.md` — 补充 USB-C 类比、JSON-RPC、OAuth、三类原语、工具设计陷阱、MCP Registry
+  - `wiki/entity___agentic-coding.md` — 补充 Devin 检查点架构、AI-Native 关联、新来源
+- 更新 `index.md`（76 页面，39 资料，30 实体，6 主题）
+- 更新 `pages/contents.md`（添加 CS146S 主题 + 三个新实体）
+
 ## [2026-05-07] ingest | Learn Harness Engineering L02-L12（walkinglabs.github.io）
 - 批量接收 11 篇 Learn Harness Engineering 课程文章（article ID 1880-1890）
 - 添加原始资料到 `_raw/`：harness-what-it-actually-is.txt、repo-as-system-of-record.txt、instruction-file-architecture.txt、session-continuity-across-sessions.txt、initialization-independent-phase.txt、wip-limit-task-boundaries.txt、feature-list-as-harness-primitive.txt、prevent-premature-completion.txt、e2e-testing-changes-results.txt、harness-observability.txt、clean-session-state.txt
