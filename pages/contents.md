@@ -1,4 +1,4 @@
-- ## 🌐 Topics
+## topic
 	- [[topic/harness-engineering]] — AI coding agent 长期可靠运行框架（11 讲课程）
 	- [[topic/agent-production]] — Agent 从玩具到生产化
 	- [[topic/agentic-developer-practices]] — 代码廉价时代开发者实践
