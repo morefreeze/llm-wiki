@@ -2,7 +2,7 @@
 type:: Entity
 created:: [[2026-05-07]]
 updated:: [[2026-05-07]]
-sources:: [[repo-as-system-of-record]]
+sources:: [[why-repo-is-system-of-record]]
 related:: [[harness]], [[harness-5-subsystems]], [[session-continuity]], [[instruction-architecture]]
 ---
 

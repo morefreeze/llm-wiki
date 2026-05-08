@@ -26,7 +26,7 @@ updated:: [[2026-05-07]]
 | [[hermes-agent-memory-system]] | Hermes Agent 四层记忆架构：冷热分离 + 缓存优先 + 程序记忆 | baoyu.io |
 | [[coding-agent-components]] | 编程 Agent 六大核心组件：Harness 比模型更重要 | baoyu.io |
 | [[harness-what-it-actually-is]] | 五子系统模型（厨房类比）+ 4 阶段实验，成功率 20%→100% | walkinglabs.github.io |
-| [[repo-as-system-of-record]] | 仓库即规范：知识可见性缺口 + 冷启动测试 + 知识衰减率 20%/月 | walkinglabs.github.io |
+| [[why-repo-is-system-of-record]] | 仓库即规范：知识可见性缺口 + 冷启动测试 + 知识衰减率 20%/月 | walkinglabs.github.io |
 | [[instruction-file-architecture]] | 路由文件 + 渐进式披露：600 行 AGENTS.md → 80 行路由文件，成功率 45%→72% | walkinglabs.github.io |
 | [[session-continuity-across-sessions]] | PROGRESS.md + DECISIONS.md：重建时间从 15 分钟降到 3 分钟（78%降低） | walkinglabs.github.io |
 | [[initialization-independent-phase]] | 自举契约四条件：独立初始化让多会话功能完成率高 31% | walkinglabs.github.io |
@@ -34,8 +34,8 @@ updated:: [[2026-05-07]]
 | [[feature-list-as-harness-primitive]] | 功能清单三元组是 harness 脊梁骨，完成率高 45%，诊断时间降 60-80% | walkinglabs.github.io |
 | [[prevent-premature-completion]] | 置信度校准偏差（Guo 2017）+ 三层终止校验 + 三 agent 架构（$9 不可用 vs $200 可用） | walkinglabs.github.io |
 | [[e2e-testing-changes-results]] | E2E 测试不仅改变结果还改变 agent 编码行为 + 架构边界执行规则 | walkinglabs.github.io |
-| [[harness-observability]] | 双层可观测性 + 冲刺合同 + Anthropic 三 agent 实验（3h50m，$124.70） | walkinglabs.github.io |
-| [[clean-session-state]] | 清洁状态五维度 + 12 周熵增数据 + harness 简化原则（Lehman 定律） | walkinglabs.github.io |
+| [[why-observability-belongs-in-harness]] | 双层可观测性 + 冲刺合同 + Anthropic 三 agent 实验（3h50m，$124.70） | walkinglabs.github.io |
+| [[why-sessions-must-leave-clean-state]] | 清洁状态五维度 + 12 周熵增数据 + harness 简化原则（Lehman 定律） | walkinglabs.github.io |
 
 ## 🧩 Entities（实体）
 

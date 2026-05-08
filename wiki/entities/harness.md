@@ -2,7 +2,7 @@
 type:: Entity
 created:: [[2026-05-06]]
 updated:: [[2026-05-07]]
-sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]], [[coding-agent-components]], [[harness-what-it-actually-is]], [[repo-as-system-of-record]], [[instruction-file-architecture]], [[session-continuity-across-sessions]], [[initialization-independent-phase]], [[wip-limit-task-boundaries]], [[feature-list-as-harness-primitive]], [[prevent-premature-completion]], [[e2e-testing-changes-results]], [[harness-observability]], [[clean-session-state]]
+sources:: [[从玩具到生产力-用真实项目讲透AI-Agent的Harness-Engineering]], [[当我们在讨论Harness的时候我们在讨论什么]], [[Anthropic-MCP-博客]], [[harness-knowledge-moat]], [[coding-agent-components]], [[harness-what-it-actually-is]], [[why-repo-is-system-of-record]], [[instruction-file-architecture]], [[session-continuity-across-sessions]], [[initialization-independent-phase]], [[wip-limit-task-boundaries]], [[feature-list-as-harness-primitive]], [[prevent-premature-completion]], [[e2e-testing-changes-results]], [[why-observability-belongs-in-harness]], [[why-sessions-must-leave-clean-state]]
 related:: [[mcp]], [[skills]], [[code-mode]], [[agent]], [[tool-use]], [[safety]], [[knowledge-lifecycle]], [[coding-harness]], [[harness-5-subsystems]], [[repo-as-system-of-record]], [[instruction-architecture]], [[session-continuity]], [[wip-limit]], [[feature-list-primitive]], [[completion-validation]], [[harness-observability]], [[clean-session-state]]
 ---
 

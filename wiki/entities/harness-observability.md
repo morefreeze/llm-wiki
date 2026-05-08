@@ -2,7 +2,7 @@
 type:: Entity
 created:: [[2026-05-07]]
 updated:: [[2026-05-07]]
-sources:: [[harness-observability]]
+sources:: [[why-observability-belongs-in-harness]]
 related:: [[harness]], [[harness-5-subsystems]], [[completion-validation]], [[clean-session-state]], [[feature-list-primitive]]
 ---
 

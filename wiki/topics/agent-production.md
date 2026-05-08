@@ -2,7 +2,7 @@
 type:: Topic
 tags:: #agent #production #mcp #safety #knowledge
 created:: [[2026-05-06]]
-sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]] [[harness-knowledge-moat]] [[harness-what-it-actually-is]] [[repo-as-system-of-record]] [[clean-session-state]]
+sources:: [[building-agents-that-reach-production-systems-with-mcp]] [[从玩具到生产力用真实项目讲透-ai-agent-的-harness-engineering]] [[当我们在讨论-harness-的时候我们在讨论什么]] [[harness-knowledge-moat]] [[harness-what-it-actually-is]] [[why-repo-is-system-of-record]] [[why-sessions-must-leave-clean-state]]
 ---
 
 # Agent 生产化

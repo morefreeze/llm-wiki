@@ -2,7 +2,7 @@
 type:: Entity
 created:: [[2026-05-07]]
 updated:: [[2026-05-07]]
-sources:: [[clean-session-state]]
+sources:: [[why-sessions-must-leave-clean-state]]
 related:: [[harness]], [[harness-5-subsystems]], [[session-continuity]], [[feature-list-primitive]], [[harness-observability]]
 ---
 
