@@ -5,7 +5,7 @@ updated:: [[2026-05-11]]
 
 # LLM Wiki Index
 
-> 📊 **81 pages** | 40 sources · 31 entities · 6 topics
+> 📊 **83 pages** | 41 sources · 32 entities · 6 topics
 
 ---
 
@@ -40,6 +40,7 @@ updated:: [[2026-05-11]]
 | [[dotey-ai-writing-workflow-coze]] | "内容导演"六步工作流：素材搜集→分析→大纲→写作→润色配图→发布，扣子替代 Claude Code | @dotey / X |
 | [[unreasonable-effectiveness-of-html]] | HTML 替代 Markdown 作为 LLM 输出格式：20 个示例覆盖 9 大场景 | Simon Willison / Thariq Shihipar |
 | [[laozhang-ai-proxy-ecosystem]] | AI CLI 反代/中转/号池生态全景：8 大类 30+ 项目，Claude/Gemini/Codex/Copilot/Cursor/Kiro/Grok 全覆盖 | @laozhang2579 / X |
+| [[gpt-5-5-instant]] | ChatGPT 新默认模型：幻觉减少 52.5%、字数减少 30.2%、Memory Sources 个性化控制 | OpenAI Blog |
 
 ## 🧩 Entities（实体）
 
@@ -78,6 +79,7 @@ updated:: [[2026-05-11]]
 | [[coze-skills-platform]] | Platform | 字节跳动扣子 Skills，Claude Code 的低门槛替代，内置画图/脚本/沙盒 |
 | [[html-as-llm-output-format]] | Practice | HTML 替代 Markdown 作为 LLM 输出格式：9 大场景 + 关键 Prompt 模式 |
 | [[ai-cli-proxy-ecosystem]] | Ecosystem | AI CLI 反代/中转 30+ 项目全景：OAuth 中转/协议逆向/进程代理/号池四大路线 |
+| [[gpt-5-5-instant]] | Model | OpenAI 新默认模型：幻觉↓52.5%、字数↓30.2%、Memory Sources 个性化控制 |
 
 ## 🌐 Topics（主题）
 
@@ -90,7 +92,7 @@ updated:: [[2026-05-11]]
 
 ## 📊 Stats
 
-- Sources: 26
-- Entities: 34
+- Sources: 27
+- Entities: 35
 - Topics: 4
 - Synthesis: 0

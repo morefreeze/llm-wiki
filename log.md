@@ -2,6 +2,15 @@
 
 ---
 
+## [2026-05-11] ingest | GPT-5.5 Instant: smarter, clearer, and more personalized（OpenAI Blog）
+- 添加原始资料到 `_raw/gpt-5-5-instant.txt`
+- 创建资料摘要页 `wiki/source___gpt-5-5-instant.md`
+- 创建实体页：
+  - `wiki/entity___gpt-5-5-instant.md` — OpenAI 新默认模型：幻觉↓52.5%、字数↓30.2%、Memory Sources 个性化控制
+- 更新 `index.md`（83 页面，27 资料，35 实体，4 主题）
+
+---
+
 ## [2026-05-11] ingest | HTML 的不合理有效性（Simon Willison / Thariq Shihipar）
 - 添加原始资料到 `_raw/unreasonable-effectiveness-of-html.txt`
 - 创建资料摘要页 `wiki/source___unreasonable-effectiveness-of-html.md`
