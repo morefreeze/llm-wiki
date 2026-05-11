@@ -64,6 +64,7 @@ sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-codin
 - [[topic/agent-efficiency]] — Token 和工具层面的效率优化
 - [[entity/vibe-coding]] — Agentic coding 的两种形态：探索性的 Vibe Coding 与专业的 Agentic Engineering
 - [[entity/software-3-0]] — Agentic coding 的范式背景
+- [[entity/html-as-llm-output-format]] — Agent 输出格式选择：HTML 替代 Markdown 提升信息密度
 - [[topic/cs146s-modern-software-developer]] — CS146S 贯穿全课程的核心主题
 
 - ## 来源

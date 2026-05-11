@@ -1,0 +1,77 @@
+作者：老张来了（@laozhang2579）
+URL：https://x.com/laozhang2579/status/2053301954286064058
+日期：2026-05-10
+
+---
+
+反代 灰产 中转 应该都在这里了👇
+
+## 一、综合型多协议网关
+
+CLIProxyAPI 是这个赛道的标杆，把 Gemini CLI、Antigravity、ChatGPT Codex、Claude Code、Qwen Code、iFlow 包装成 OpenAI/Gemini/Claude/Codex 兼容的 API 服务
+
+AIClient-2-API 是 Node.js 实现，通过模拟 Gemini CLI、Antigravity、Codex、Grok、Kiro 的客户端请求，封装成本地 OpenAI 兼容接口。2026 年初还加了 Grok 的 Cookie/SSO 逆向，是目前对 Grok 支持最完整的
+
+Antigravity-Manager 是桌面客户端路线，Tauri + React 写的，把 Google/Anthropic 的 Web Session 转成标准化 API 接口，带 OAuth 链接生成和账号池调度
+
+9router 和它的 TypeScript fork OmniRoute 是"智能路由 + 多档 fallback"的代表，iFlow、Kiro、Qwen 被标为 FREE 的是真免费无限，通过 OAuth 和 device auth 接入
+
+ccproxy-api Python 实现，特点是直接复用 Claude CLI SDK tokens 和 Codex CLI 的 credential store，插件系统做得比较干净
+
+CliGate 带可视化 Dashboard，支持 ChatGPT Account Pool、Claude Account Pool OAuth PKCE login、Antigravity Account Pool，一键配置 CLI 工具
+
+## 二、Claude 专项
+
+claude-relay-service 是国内最火的 Claude 中转方案，集成 Anthropic 的 OAuth 授权流程，在 Web 界面点击 Add Account 生成授权链接，登录 Claude 账号授权后接入服务。拼车党的基础设施
+
+ClewdR 是 Rust 写的，支持 Claude 网页和 Claude Code，单一静态二进制覆盖 Linux/macOS/Windows/Android，Docker 镜像齐全，带 React 管理界面。性能路线代表
+
+claude-code-proxy 是 Claude Code 转 OpenAI 的经典实现，教程里讲"双向转换"的基础案例
+
+claude-relay（npow）是另一个思路，直接起一个 claude -p 进程来代理，而不是逆向协议
+
+claude-unofficial-api 和 unofficial-claude-api（st1vms）是更早期的纯 Session Key 逆向（前者 JS、后者 Python）
+
+Claude Code Action with OAuth 是官方 Claude Code Action 的 fork，支持 OAuth 认证，让 Claude Max 订阅者在 GitHub Actions 里使用订阅
+
+opencode-claude-auth 走 Keychain 路线，从 macOS Keychain 读取 Claude Code OAuth credentials，支持多账号自动检测
+
+## 三、ChatGPT/Codex 专项
+
+PawanOsman/ChatGPT 是元老级项目，把逆向成本打到几乎为零
+
+acheong08/ChatGPT（revChatGPT）是逆向 ChatGPT Web 的祖师爷仓库
+
+codexProxy（J1aDong/codexProxy）把 Codex 包成 Anthropic Messages 入口
+
+## 四、Gemini 专项
+
+gemini-proxy（KashifKhn）是目前最干净的实现，Bun + Hono + TypeScript，OAuth 2.0 + PKCE 浏览器登录，自动刷新 token，不需要付费 API key，不需要 gcloud CLI
+
+gemini-openai-proxy（Brioch）、gemini-cli-proxy（ubaltaci）、geminicli2api（gzzhongqi）是同类的三个竞品
+
+openai-gemini（PublicAffairs）是 Serverless 路线，可以直接部署到 Vercel/Cloudflare Workers
+
+## 五、Copilot 专项
+
+copilot-proxy（hankchiutw）一个简单的 HTTP 代理，把 GitHub Copilot 的免费额度暴露成 OpenAI 兼容 API
+
+github-copilot-proxy（BjornMelin）让 Cursor 调 Copilot 的后端，绕过 Cursor 的 500 次 premium 限制
+
+copilot-proxy（lutzleonhardt）是 VS Code 插件路线，通过 Language Model API 暴露
+
+## 六、Kiro / Qwen / Grok 逆向
+
+kiro-gateway（jwadow/kiro-gateway）是 Kiro IDE / Amazon Q Developer 的网关，免费白嫖 Claude 模型的核心姿势
+
+Qwen-Copilot-Proxy（edwardgj）伪装成 Ollama 接口来对接 Copilot Chat
+
+GrokProxy（CNFlyCat）走 Cookie 路线，从开发者工具抓 sso= 开头的 cookie
+
+## 七、Cursor 专项
+
+Cursor-To-OpenAI（JiuZ-Chn/Cursor-To-OpenAI）把 Cursor 编辑器的 AI Chat 包成 OpenAPI，从 Cursor 客户端 cookie（user_ 开头）提取认证，网页 cookie 不能用
+
+## 八、逆向号池 + 商用平台
+
+FakeOAI/tokens 是商用级别，轮训号池将各大平台的模型能力转化为 OpenAI、Anthropic、Gemini 等平台的 API 接口标准格式，支持 Claude Code、Codex、GeminiCli 等终端调用

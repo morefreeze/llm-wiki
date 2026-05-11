@@ -2,7 +2,7 @@
 type:: Entity
 tags:: #agent #reusability #automation
 created:: [[2026-05-06]]
-sources:: [[source/anthropic-code-execution-with-mcp]]
+sources:: [[anthropic-code-execution-with-mcp]]
 ---
 
 - # Skills
@@ -26,11 +26,13 @@ sources:: [[source/anthropic-code-execution-with-mcp]]
 - ## 与其他系统的关系
 - Hermes Agent 的 Skills 系统（`~/.hermes/skills/`）采用相同理念——作为**程序记忆（Procedural Memory）**：如何做事（知识）vs 记住什么（语义/情景记忆）
 - 每个 Skill 包含 SKILL.md + 可选的脚本/模板/资源文件
-- Hermes 的技能索引 + 按需加载设计 = [[entity/progressive-disclosure]] 的具体实现：提示词中只有技能索引（轻量），完整技能内容按需加载
+- Hermes 的技能索引 + 按需加载设计 = [[progressive-disclosure]] 的具体实现：提示词中只有技能索引（轻量），完整技能内容按需加载
 - 这正是 LLM Wiki 模式中 Schema 层的实践
-- 参见 [[entity/agent-memory-system]] 了解 Skills 在 Hermes 四层记忆架构中的位置
+- 参见 [[agent-memory-system]] 了解 Skills 在 Hermes 四层记忆架构中的位置
+- **扣子（Coze）Skills 平台**是 Skills 概念在非程序员领域的商业化实现，参见 [[coze-skills-platform]]
+- 宝玉在 [[dotey-ai-writing-workflow-coze]] 中实践了完整的 Skills 化写作流程（分析/写作/润色/配图/发布各一个 Skill）
 - ## 关联
-- [[entity/mcp]] — Skills 基于代码执行 + MCP 环境
-- [[source/llm-wiki-pattern]] — Wiki 本身可视为一种 Skill
+- [[mcp]] — Skills 基于代码执行 + MCP 环境
+- [[llm-wiki-pattern]] — Wiki 本身可视为一种 Skill
 - ## 来源
-- [[source/anthropic-code-execution-with-mcp]] — Anthropic 工程博客
+- [[anthropic-code-execution-with-mcp]] — Anthropic 工程博客
