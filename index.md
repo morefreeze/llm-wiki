@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-11]]
+updated:: [[2026-05-12]]
 ---
 
 # LLM Wiki Index
 
-> 📊 **83 pages** | 41 sources · 32 entities · 6 topics
+> 📊 **88 pages** | 43 sources · 35 entities · 6 topics
 
 ---
 
@@ -40,7 +40,9 @@ updated:: [[2026-05-11]]
 | [[dotey-ai-writing-workflow-coze]] | "内容导演"六步工作流：素材搜集→分析→大纲→写作→润色配图→发布，扣子替代 Claude Code | @dotey / X |
 | [[unreasonable-effectiveness-of-html]] | HTML 替代 Markdown 作为 LLM 输出格式：20 个示例覆盖 9 大场景 | Simon Willison / Thariq Shihipar |
 | [[laozhang-ai-proxy-ecosystem]] | AI CLI 反代/中转/号池生态全景：8 大类 30+ 项目，Claude/Gemini/Codex/Copilot/Cursor/Kiro/Grok 全覆盖 | @laozhang2579 / X |
-| [[gpt-5-5-instant]] | ChatGPT 新默认模型：幻觉减少 52.5%、字数减少 30.2%、Memory Sources 个性化控制 | OpenAI Blog |
+|| [[gpt-5-5-instant]] | ChatGPT 新默认模型：幻觉减少 52.5%、字数减少 30.2%、Memory Sources 个性化控制 | OpenAI Blog |
+|| [[anthropic-claude-constitution]] | Claude 完整宪法：四层优先级架构（安全→道德→指南→有用）+ 六大章节 + 有声书 | Anthropic |
+|| [[dow-ufo-uap-release]] | 美国战争部 PURSUE 系统发布首批 158 个 FBI 解密 UAP 文件 | war.gov |
 
 ## 🧩 Entities（实体）
 
@@ -79,7 +81,10 @@ updated:: [[2026-05-11]]
 | [[coze-skills-platform]] | Platform | 字节跳动扣子 Skills，Claude Code 的低门槛替代，内置画图/脚本/沙盒 |
 | [[html-as-llm-output-format]] | Practice | HTML 替代 Markdown 作为 LLM 输出格式：9 大场景 + 关键 Prompt 模式 |
 | [[ai-cli-proxy-ecosystem]] | Ecosystem | AI CLI 反代/中转 30+ 项目全景：OAuth 中转/协议逆向/进程代理/号池四大路线 |
-| [[gpt-5-5-instant]] | Model | OpenAI 新默认模型：幻觉↓52.5%、字数↓30.2%、Memory Sources 个性化控制 |
+|| [[gpt-5-5-instant]] | Model | OpenAI 新默认模型：幻觉↓52.5%、字数↓30.2%、Memory Sources 个性化控制 |
+|| [[claude-constitution]] | Document | Anthropic Claude 宪法：四层优先级（安全→道德→指南→有用）+ AI 意识讨论 |
+|| [[dow-uap-pursue]] | System | PURSUE 总统解封系统：滚动发布 UAP 解密文件，首批 158 个 FBI 文件 |
+|| [[uap-declassification]] | Movement | UAP 解密运动：从海军视频到 PURSUE 系统的政策演变里程碑 |
 
 ## 🌐 Topics（主题）
 
@@ -92,7 +97,7 @@ updated:: [[2026-05-11]]
 
 ## 📊 Stats
 
-- Sources: 27
+- Sources: 43
 - Entities: 35
 - Topics: 4
 - Synthesis: 0

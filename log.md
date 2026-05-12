@@ -2,6 +2,25 @@
 
 ---
 
+## [2026-05-12] ingest | Claude's Constitution (Full Text + Audiobook)（Anthropic）
+- 添加原始资料到 `_raw/anthropic-claude-constitution.txt`（192.5 KB）
+- 创建资料摘要页 `wiki/source___anthropic-claude-constitution.md`
+- 创建实体页：
+  - `wiki/entity___claude-constitution.md` — Claude 宪法：四层优先级架构 + 六大章节 + AI 意识讨论
+- 更新 `index.md`（85 页面，42 资料，33 实体，6 主题）
+
+---
+
+## [2026-05-12] ingest | U.S. Department of War — UFO/UAP 解密文件（war.gov）
+- 添加原始资料到 `_raw/dow-ufo-uap-release.txt`
+- 创建资料摘要页 `wiki/source___dow-ufo-uap-release.md`
+- 创建实体页：
+  - `wiki/entity___dow-uap-pursue.md` — PURSUE 总统解封系统：滚动发布 UAP 文件
+  - `wiki/entity___uap-declassification.md` — UAP 解密运动：2020-2026 里程碑时间线
+- 更新 `index.md`（88 页面，43 资料，35 实体，6 主题）
+
+---
+
 ## [2026-05-11] ingest | GPT-5.5 Instant: smarter, clearer, and more personalized（OpenAI Blog）
 - 添加原始资料到 `_raw/gpt-5-5-instant.txt`
 - 创建资料摘要页 `wiki/source___gpt-5-5-instant.md`
