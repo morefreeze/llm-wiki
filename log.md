@@ -21,6 +21,24 @@
 
 ---
 
+## [2026-05-08] ingest | Agentic Coding Is a Trap（Lars Faye）
+- 添加原始资料到 `_raw/agentic-coding-is-a-trap.txt`
+- 创建资料摘要页 `wiki/source___agentic-coding-is-a-trap.md`
+- 更新实体页：
+  - `wiki/entity___agentic-coding.md` — 补充 Lars Faye 反驳视角：监督的悖论、47% 技能下降、Ship's Computer 原则
+- 更新 `index.md`（90 页面，46 资料，35 实体，6 主题）
+
+---
+
+## [2026-05-08] ingest | Using Claude Code: The Unreasonable Effectiveness of HTML（Thariq Shihipar @trq212）
+- 添加原始资料到 `_raw/thariq-html-effectiveness-x-thread.txt`
+- 创建资料摘要页 `wiki/source___thariq-html-effectiveness-x-thread.md`
+- 更新实体页：
+  - `wiki/entity___html-as-llm-output-format.md` — 补充 Thariq 原始 X 帖作为第一手来源（11M 浏览，5 条理由）
+- 更新 `index.md`（90 页面，46 资料，35 实体，6 主题）
+
+---
+
 ## [2026-05-11] ingest | GPT-5.5 Instant: smarter, clearer, and more personalized（OpenAI Blog）
 - 添加原始资料到 `_raw/gpt-5-5-instant.txt`
 - 创建资料摘要页 `wiki/source___gpt-5-5-instant.md`

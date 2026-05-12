@@ -2,7 +2,7 @@
 type:: Entity
 tags:: #prompt-engineering #html #agent #output-format
 created:: [[2026-05-11]]
-sources:: [[source/unreasonable-effectiveness-of-html]]
+sources:: [[source/unreasonable-effectiveness-of-html]], [[source/thariq-html-effectiveness-x-thread]]
 ---
 - # HTML as LLM Output Format（HTML 作为 LLM 输出格式）
 - ## 概述
@@ -42,4 +42,5 @@ sources:: [[source/unreasonable-effectiveness-of-html]]
   - [[entity/living-specs]] — 富 HTML 输出可被视为活的文档
   - [[entity/harness]] — HTML 编辑器模式可作为 harness 的可视化层
 - ## 来源
-  - [[source/unreasonable-effectiveness-of-html]] — Simon Willison 引介 + Thariq Shihipar 原始示例
+  - [[source/thariq-html-effectiveness-x-thread]] — Thariq Shihipar（Claude Code 团队）的原始 X 帖：11M 浏览，5 条理由，5 大场景，20 个示例
+  - [[source/unreasonable-effectiveness-of-html]] — Simon Willison 引介 + copy.fail 独立验证案例

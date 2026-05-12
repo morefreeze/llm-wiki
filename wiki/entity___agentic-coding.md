@@ -2,7 +2,7 @@
 type:: Entity
 tags:: #agent #coding #developer-workflow
 created:: [[2026-05-06]]
-sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-coding-to-agentic-engineering]], [[source/coding-agents-101-devin]], [[source/good-context-good-code]], [[source/how-anthropic-teams-use-claude-code]]
+sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-coding-to-agentic-engineering]], [[source/coding-agents-101-devin]], [[source/good-context-good-code]], [[source/how-anthropic-teams-use-claude-code]], [[source/agentic-coding-is-a-trap]]
 ---
 
 - # Agentic Coding（智能体编码）
@@ -67,9 +67,33 @@ sources:: [[source/10-lessons-for-agentic-coding]], [[source/karpathy-vibe-codin
 - [[entity/html-as-llm-output-format]] — Agent 输出格式选择：HTML 替代 Markdown 提升信息密度
 - [[topic/cs146s-modern-software-developer]] — CS146S 贯穿全课程的核心主题
 
+- ## Lars Faye 的反驳：Agentic Coding Is a Trap
+  来源：[[source/agentic-coding-is-a-trap]]
+
+  Agentic coding 在短期提升产出，却在中长期侵蚀**监督 AI 所必须具备的能力**——这是"监督的悖论"。
+
+  **核心数据**：
+  - Anthropic 内部研究：重度使用 AI 的开发者调试技能下降 **47%**，数月内即可观测
+  - LinkedIn 总监已禁止团队在批判性思维任务中使用 AI
+
+  **陷阱机制**：
+  | 阶段 | 现象 |
+  |------|------|
+  | 短期 | 产出↑，感觉很好 |
+  | 中期 | 技能停滞，继而下降 |
+  | 长期 | 无法有效监督 AI，也无法脱离 AI 工作 |
+
+  **作者原则**（"像 Ship's Computer 那样用，而不是像 Data"）：
+  1. AI 永远是辅助进程，不是主进程
+  2. 不生成超过自己能逐行审查的代码
+  3. 只要求 AI 做你自己也能做的事
+
+  **优先级倒置**：传统学习是"速度→理解"，AI 辅助要求先"理解→才能引导 AI"——大多数开发者没有意识到这一根本逆转。
+
 - ## 来源
 - [[source/10-lessons-for-agentic-coding]] — 10 条开发者实践原则
 - [[source/karpathy-vibe-coding-to-agentic-engineering]] — Karpathy 的 Vibe Coding vs Agentic Engineering 框架、锯齿状智能、规格所有权
 - [[source/coding-agents-101-devin]] — Devin/Cognition：有效管理 Coding Agent 的四条规则与检查点架构
 - [[source/good-context-good-code]] — StockApp：AI 原生团队 2.5x 生产力实践
 - [[source/how-anthropic-teams-use-claude-code]] — Anthropic 10 个内部团队的 Claude Code 实战报告
+- [[source/agentic-coding-is-a-trap]] — Lars Faye：监督的悖论、47% 调试技能下降、Ship's Computer 原则
