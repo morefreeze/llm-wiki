@@ -1,0 +1,109 @@
+Title: Using Claude Code: The Unreasonable Effectiveness of HTML
+Author: Thariq Shihipar (@trq212)
+URL: https://x.com/trq212/status/2052809885763747935
+Date: 2026-05-09
+Platform: X (Twitter)
+Engagement: 11M views, 937 replies, 3.5K retweets, 15K likes
+Retrieved: 2026-05-08
+
+Note: Thariq Shihipar is a member of the Claude Code team at Anthropic.
+This X thread is the primary source for the "HTML as LLM output format" concept.
+Simon Willison's blog post (unreasonable-effectiveness-of-html) covered/amplified this thread.
+
+---
+
+Thread Summary:
+
+Thariq argues that HTML is dramatically more effective than Markdown as a
+Claude Code output format. The thread went viral (11M views) because it
+demonstrated something counterintuitive: spending more tokens on HTML output
+results in better outcomes than the token-efficient Markdown approach.
+
+Why HTML > Markdown — 5 Reasons:
+
+1. Information Density
+   HTML can pack more meaningful information into the same visual space.
+   Markdown is linear — everything is a flat list or header hierarchy.
+   HTML allows tables, columns, tabs, collapsible sections, color coding.
+   A code review in HTML can show diff + annotations + severity colors simultaneously.
+   The equivalent Markdown would be 3x longer and harder to parse.
+
+2. Visual Clarity
+   Humans process visual information faster than text.
+   HTML lets Claude Code produce outputs that humans actually read (not just scroll past).
+   Color, layout, and hierarchy communicate at a glance.
+   Key insight: HTML takes 2-4x longer to generate, but is much more likely
+   to actually be read and acted on.
+
+3. Ease of Sharing
+   An HTML file is a complete, self-contained artifact.
+   It can be opened in any browser, shared via email, embedded in docs.
+   A Markdown file requires a Markdown renderer to be readable.
+   HTML is the universal document format.
+
+4. Two-way Interaction
+   HTML + JavaScript enables interactive outputs:
+   - Editable fields that feed back into the next prompt
+   - Toggle switches for feature flags
+   - Sliders for parameter tuning
+   - Click-to-approve / click-to-reject in code reviews
+   This collapses the human-in-the-loop feedback cycle.
+
+5. Data Ingestion
+   HTML can display structured data (tables, charts, graphs) inline.
+   Data that would require a separate tool (Excel, Grafana) can be
+   rendered directly in the output. Claude can generate an SVG chart
+   of your metrics as part of a report, without external dependencies.
+
+Use Cases Demonstrated:
+
+1. Specs / Planning / Exploration
+   - Side-by-side comparison of approaches
+   - Visual architecture diagrams (SVG)
+   - Implementation timelines with dependencies
+
+2. Code Review
+   - Diff with inline margin annotations
+   - Color-coded findings by severity (blocker/suggestion/nit)
+   - Module dependency map
+
+3. Design / Prototypes
+   - Interactive component demo with parameter sliders
+   - Clickable user flow prototype
+   - Color token palette rendered as actual colors
+
+4. Reports / Learning
+   - Collapsible sections per topic
+   - Tabbed code examples (multiple languages)
+   - Sidebar glossary linked to body text
+
+5. Custom Editing Interfaces
+   - Ticket board with drag-and-drop
+   - Feature flag editor with enable/disable toggles
+   - Prompt tuning interface
+
+The Core Prompt Pattern:
+"Output HTML, neatly styled and using capabilities of HTML and CSS and
+JavaScript to make the explanation rich and interactive and as clear as possible."
+
+Token Cost vs. Value:
+Generating HTML takes 2-4x more tokens than Markdown.
+But: a Markdown output that nobody reads has effective value of zero.
+An HTML output that gets read, shared, and acted on has compounding value.
+The ROI calculation favors HTML for any output meant for human consumption.
+
+The Collection:
+Thariq published 20 self-contained HTML examples at:
+https://thariqs.github.io/html-effectiveness/
+These demonstrate the concepts concretely across all 5 use case categories.
+
+Historical Context:
+In the GPT-4 era (8K context window), Markdown made sense — token budgets
+were tight. With modern models (100K-200K+ context), the calculus changes.
+HTML's expressiveness is now worth the token cost.
+
+Relation to Simon Willison's Post:
+Simon Willison wrote about this on his blog (simonwillison.net/2026/May/8/...)
+where he validated the approach by using `curl | llm -m gpt-5.5` to generate
+an HTML explanation of a security vulnerability. His post amplified this thread
+and added the "copy.fail" case study as independent validation.

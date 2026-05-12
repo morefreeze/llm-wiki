@@ -1,0 +1,87 @@
+Title: Agentic Coding Is a Trap
+Author: Lars Faye
+URL: https://larsfaye.com/articles/agentic-coding-is-a-trap
+Date: 2026 (May)
+Retrieved: 2026-05-08
+
+---
+
+Core Thesis: Agentic coding creates cognitive debt and skill atrophy.
+The Paradox of Supervision: the very skills needed to supervise AI agents
+are the skills that get atrophied by using AI agents.
+
+Key Data:
+- Anthropic study: 47% drop in debugging skills among developers who rely heavily on AI
+- Skills begin to atrophy within months of heavy AI use
+- LinkedIn Director banned AI tools for critical thinking tasks in their team
+
+LLMs Invert the Priority List:
+Traditional learning: speed → understanding (you type fast, then understand why)
+AI-assisted: understanding → speed (you need to understand FIRST to guide AI)
+This is a fundamental inversion that most developers do not account for.
+
+Coding === Planning:
+Many developers think best THROUGH code, not through specs.
+The assumption that you can write a spec and hand it to an agent ignores how
+much of planning happens during implementation.
+Ambiguous specs → hallucinations → more tokens → more revision → more cognitive load
+
+Vendor Lock-in Risk:
+Developers dependent on Claude experience complete standstill during outages.
+This is a new class of productivity risk that organizations haven't priced in.
+
+The Paradox of Supervision (detailed):
+To effectively supervise an AI agent writing code, you need to:
+1. Understand the problem domain
+2. Know what correct code looks like
+3. Spot subtle bugs and security issues
+4. Evaluate architectural decisions
+But heavy AI use atrophies exactly those skills (#1-4).
+The more you use AI, the worse you get at supervising AI.
+
+Counter-Argument to Spec-Driven Development:
+Spec-driven development assumes:
+- You can fully specify a problem before coding
+- The spec is unambiguous
+- The AI can faithfully implement the spec
+Reality:
+- Specs are always incomplete
+- Ambiguity causes hallucinations
+- Iteration costs more tokens and time than just writing the code
+
+Simon Willison Reference:
+Simon Willison has written extensively about "cognitive debt" — the hidden cost
+of outsourcing thinking to AI. Faye cites this as foundational to the trap argument.
+
+Margaret Storey Research:
+Professor Margaret Storey (cognitive debt in software development) — research
+showing that offloading cognitive tasks leads to skill degradation faster than
+most practitioners expect.
+
+Anthropic Acknowledgment:
+Anthropic's own research acknowledges the atrophy risk. They found:
+- 47% drop in debugging skills
+- Atrophy begins within months
+- Effect is stronger for junior developers
+
+Author's Approach — "The Ship's Computer, Not Data":
+Lars Faye's personal rule set:
+1. Use AI as a secondary process, not primary
+2. Never generate more code than you can review line-by-line
+3. Only ask AI to do things you could do yourself
+4. Never use AI to understand a codebase for the first time
+5. Use it like the Ship's Computer (navigation aid), not like Data (autonomous agent)
+   [Star Trek reference: Ship's Computer gives you data to make decisions;
+    Data makes decisions for you — only one builds your skills]
+
+The Trap Mechanism:
+Short-term: productivity up, feels great
+Medium-term: skills plateau, then decline
+Long-term: unable to supervise AI effectively, unable to work without AI
+Net result: worse outcomes than before, with dependency added
+
+Conclusion:
+The industry narrative celebrates speed gains from agentic coding.
+The hidden cost is cognitive: developers trade understanding for output.
+When the AI is wrong (and it will be), the developer may lack the skills
+to catch it. That is when the trap closes.
