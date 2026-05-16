@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-12]]
+updated:: [[2026-05-16]]
 ---
 
 # LLM Wiki Index
 
-> 📊 **90 pages** | 46 sources · 35 entities · 6 topics
+> 📊 **93 pages** | 47 sources · 37 entities · 6 topics
 
 ---
 
@@ -45,6 +45,7 @@ updated:: [[2026-05-12]]
 | [[dow-ufo-uap-release]] | 美国战争部 PURSUE 系统发布首批 158 个 FBI 解密 UAP 文件 | war.gov |
 | [[agentic-coding-is-a-trap]] | 监督的悖论：Agentic coding 侵蚀监督 AI 所需技能，47% 调试技能下降 | larsfaye.com |
 | [[thariq-html-effectiveness-x-thread]] | HTML > Markdown 的 5 条理由与 5 大场景：11M 浏览的原始第一手论证 | @trq212 / X |
+| [[agent-hooks-deterministic-control]] | Hooks 在 Agent 生命周期节点注入确定性控制，规则自动执行不依赖模型记忆 | @dabit3 / X |
 
 ## 🧩 Entities（实体）
 
@@ -87,6 +88,7 @@ updated:: [[2026-05-12]]
 | [[claude-constitution]] | Document | Anthropic Claude 宪法：四层优先级（安全→道德→指南→有用）+ AI 意识讨论 |
 | [[dow-uap-pursue]] | System | PURSUE 总统解封系统：滚动发布 UAP 解密文件，首批 158 个 FBI 文件 |
 | [[uap-declassification]] | Movement | UAP 解密运动：从海军视频到 PURSUE 系统的政策演变里程碑 |
+| [[agent-hooks]] | Mechanism | Agent 生命周期六节点确定性控制：Prompts 引导，Hooks 保证执行 |
 
 ## 🌐 Topics（主题）
 
@@ -101,7 +103,7 @@ updated:: [[2026-05-12]]
 
 ## 📊 Stats
 
-- Sources: 46
-- Entities: 35
+- Sources: 47
+- Entities: 37
 - Topics: 6
 - Synthesis: 0

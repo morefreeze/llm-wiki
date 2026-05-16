@@ -1,0 +1,28 @@
+Source: https://x.com/dabit3/status/2055319214202777894
+Author: nader dabit (@dabit3)
+Date: 2026-05-16
+Also available as Markdown on GitHub. Example code available here.
+
+---
+
+Agent Hooks: Deterministic Control for Agent Workflows
+
+Hooks make the agent workflow programmable. If you've ever reminded an agent twice to avoid a file, run a test, or follow a release rule, you have already found a use case for hooks.
+
+Hooks enable this by attaching user-defined handlers to specific lifecycle points in an agent session. A handler receives event data, can be narrowed by an optional matcher or filter, and can return context, make a decision, or perform a side effect.
+
+The main value proposition is deterministic control: rules already captured in scripts, tests, policy checks, and runbooks can run at known lifecycle points in the agent workflow instead of depending on the model to remember and voluntarily follow them.
+
+Use prompts for guidance. Use hooks for behavior that should run every time.
+
+For example, a project instruction can say "do not edit generated files," but a PreToolUse hook can inspect the attempted edit and block it before it happens; a project instruction can say "run tests before finishing," but a PostToolUse hook can run the test suite after edits and a Stop hook can prevent completion when the last test run failed.
+
+Six lifecycle points:
+- SessionStart: load session context, such as project conventions, active constraints, environment facts, or a relevant runbook when the session starts.
+- UserPromptSubmit: inspect the user prompt before the model sees it, then add context, route the request, or block a known-bad prompt.
+- PreToolUse: inspect a tool call before it runs and block, approve, or modify behavior based on project policy.
+- PostToolUse: run validation after a successful tool call, such as tests, formatting, scanning, logging, or state capture.
+- Stop: check whether the agent should be allowed to finish the turn.
+- SessionEnd: write final logs, flush metrics, export a summary, or clean up temporary state when the session ends.
+
+Stats: 15 replies, 63 retweets, 514 likes, 1067 bookmarks, 62457 views

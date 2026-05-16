@@ -2,6 +2,15 @@
 
 ---
 
+## [2026-05-16] ingest | Agent Hooks: Deterministic Control for Agent Workflows（@dabit3 / X）
+- 添加原始资料到 `_raw/agent-hooks-deterministic-control.txt`
+- 创建资料摘要页 `wiki/source___agent-hooks-deterministic-control.md`
+- 创建实体页：
+  - `wiki/entity___agent-hooks.md` — Agent 生命周期六节点确定性控制机制
+- 更新 `index.md`（90 页面，44 资料，36 实体，6 主题）
+
+---
+
 ## [2026-05-12] ingest | Claude's Constitution (Full Text + Audiobook)（Anthropic）
 - 添加原始资料到 `_raw/anthropic-claude-constitution.txt`（192.5 KB）
 - 创建资料摘要页 `wiki/source___anthropic-claude-constitution.md`
