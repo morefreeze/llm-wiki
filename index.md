@@ -1,11 +1,11 @@
 ---
 type:: Index
-updated:: [[2026-05-16]]
+updated:: [[2026-05-17]]
 ---
 
 # LLM Wiki Index
 
-> 📊 **93 pages** | 47 sources · 37 entities · 6 topics
+> 📊 **105 pages** | 55 sources · 44 entities · 6 topics
 
 ---
 
@@ -46,6 +46,14 @@ updated:: [[2026-05-16]]
 | [[agentic-coding-is-a-trap]] | 监督的悖论：Agentic coding 侵蚀监督 AI 所需技能，47% 调试技能下降 | larsfaye.com |
 | [[thariq-html-effectiveness-x-thread]] | HTML > Markdown 的 5 条理由与 5 大场景：11M 浏览的原始第一手论证 | @trq212 / X |
 | [[agent-hooks-deterministic-control]] | Hooks 在 Agent 生命周期节点注入确定性控制，规则自动执行不依赖模型记忆 | @dabit3 / X |
+| [[一文带你看懂_火爆全网的Skills到底是个啥]] | Skills = Agent持久化能力模块，.md格式指令文件，区别于Prompt和MCP | 数字生命卡兹克 |
+| [[Claude悄悄更新了Skills生成器_这绝对是一次史诗级升级]] | Anthropic官方Skills生成器重大升级，支持YAML frontmatter和自动测试 | 数字生命卡兹克 |
+| [[安利一个11万Star的必装插件_能让你的Agent体验直接质变]] | superpowers插件集成大量Skills，Agent自动加载最佳实践 | 数字生命卡兹克 |
+| [[分享6个我觉得应该必装的Skills]] | 6个必装Skills：代码审查、TDD、文档生成、安全审计、性能优化、协作规范 | 数字生命卡兹克 |
+| [[所有用OpenClaw的朋友_我都劝你先装上这个能保命的Skill]] | 安全类Skill自动拦截Agent危险操作，给Agent装安全带 | 数字生命卡兹克 |
+| [[今天_我决定把_卡兹克风格创作_skill_开源了]] | 风格蒸馏Skill：将个人创作风格编码为可复用指令文件 | 数字生命卡兹克 |
+| [[开源_洁癖_skill_让你的Agent越用越聪明]] | 洁癖Skill：Agent自动维护优化Skills的元Skill，形成自优化闭环 | 数字生命卡兹克 |
+| [[装了这个AI热点Skill之后_你再也不需要自己去刷AI新闻了]] | AIHOT免费AI新闻聚合平台+对应Skill，Agent自动追踪AI热点 | 数字生命卡兹克 |
 
 ## 🧩 Entities（实体）
 
@@ -89,6 +97,14 @@ updated:: [[2026-05-16]]
 | [[dow-uap-pursue]] | System | PURSUE 总统解封系统：滚动发布 UAP 解密文件，首批 158 个 FBI 文件 |
 | [[uap-declassification]] | Movement | UAP 解密运动：从海军视频到 PURSUE 系统的政策演变里程碑 |
 | [[agent-hooks]] | Mechanism | Agent 生命周期六节点确定性控制：Prompts 引导，Hooks 保证执行 |
+| [[Skills]] | Concept | Agent持久化能力模块，.md格式指令文件，区别于Prompt和MCP |
+| [[OpenClaw]] | Platform | AI Agent平台，支持通过Skills系统扩展Agent能力 |
+| [[superpowers]] | Project | 11万Star开源Skills集合，Agent自动加载最佳实践工作流 |
+| [[Agent安全]] | Concept | Agent执行危险操作时自动拦截的安全护栏 |
+| [[风格蒸馏]] | Technique | 将个人创作风格编码为可复用Skill指令文件 |
+| [[洁癖Skill]] | Meta-Skill | Agent自动维护和优化其他Skills的元Skill |
+| [[AIHOT]] | Platform | 免费AI热点新闻聚合平台，自动追踪AI领域最新动态 |
+| [[数字生命卡兹克]] | Author | 微信公众号作者，专注AI Agent和Skills生态科普 |
 
 ## 🌐 Topics（主题）
 
@@ -103,7 +119,7 @@ updated:: [[2026-05-16]]
 
 ## 📊 Stats
 
-- Sources: 47
-- Entities: 37
+- Sources: 55
+- Entities: 44
 - Topics: 6
 - Synthesis: 0

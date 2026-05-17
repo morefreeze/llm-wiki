@@ -1,38 +1,32 @@
 ---
 type:: Entity
-tags:: #agent #reusability #automation
-created:: [[2026-05-06]]
-sources:: [[anthropic-code-execution-with-mcp]]
+tags:: #AI #Agent #Skills #工作流
+created:: [[2026-05-17]]
+sources:: - [[source/一文带你看懂_火爆全网的Skills到底是个啥]]
+- [[source/Claude悄悄更新了Skills生成器_这绝对是一次史诗级升级]]
+- [[source/安利一个11万Star的必装插件_能让你的Agent体验直接质变]]
+- [[source/分享6个我觉得应该必装的Skills]]
 ---
+# Skills
 
-- # Skills
-- ## 概述
-  Skills 是可复用的 Agent 能力单元——包含指令、脚本和资源的文件夹。Agent 在代码执行环境中积累的可复用代码函数，结合 SKILL.md 文件形成结构化技能。
-- ## 关键信息
-- 文件夹结构：可复用代码 + SKILL.md（结构化描述）
-- Agent 开发出工作代码后保存为 Skill
-- 后续执行可直接 import 使用
-- 逐步积累高级能力工具箱
-- ## 代码示例
-  ```typescript
-  // ./skills/save-sheet-as-csv.ts
-  import * as gdrive from './servers/google-drive';
-  export async function saveSheetAsCsv(sheetId: string) {
-  const data = await gdrive.getSheet({ sheetId });
-  const csv = data.map(row => row.join(',')).join('\n');
-  await fs.writeFile(`./workspace/sheet-${sheetId}.csv`, csv);
-  }
-  ```
-- ## 与其他系统的关系
-- Hermes Agent 的 Skills 系统（`~/.hermes/skills/`）采用相同理念——作为**程序记忆（Procedural Memory）**：如何做事（知识）vs 记住什么（语义/情景记忆）
-- 每个 Skill 包含 SKILL.md + 可选的脚本/模板/资源文件
-- Hermes 的技能索引 + 按需加载设计 = [[progressive-disclosure]] 的具体实现：提示词中只有技能索引（轻量），完整技能内容按需加载
-- 这正是 LLM Wiki 模式中 Schema 层的实践
-- 参见 [[agent-memory-system]] 了解 Skills 在 Hermes 四层记忆架构中的位置
-- **扣子（Coze）Skills 平台**是 Skills 概念在非程序员领域的商业化实现，参见 [[coze-skills-platform]]
-- 宝玉在 [[dotey-ai-writing-workflow-coze]] 中实践了完整的 Skills 化写作流程（分析/写作/润色/配图/发布各一个 Skill）
-- ## 关联
-- [[mcp]] — Skills 基于代码执行 + MCP 环境
-- [[llm-wiki-pattern]] — Wiki 本身可视为一种 Skill
-- ## 来源
-- [[anthropic-code-execution-with-mcp]] — Anthropic 工程博客
+## 概述
+Skills是AI Agent的持久化能力模块——一段结构化的.md格式指令文件，定义了Agent在特定场景下的工作流和规范。与一次性的Prompt不同，Skills是可复用、可共享、可迭代的能力包，是2026年AI圈最火的概念之一。
+
+## 关键信息
+- 本质：.md格式的结构化指令文件，定义Agent的工作流
+- 与Prompt区别：Prompt是一次性指令，Skills是可复用的能力包
+- 与MCP区别：MCP是工具调用协议，Skills是工作流规范
+- 使用方式：Claude放在.claude/commands/目录，OpenClaw通过SKILL.md加载
+- 生态：GitHub上已有多个高Star的Skills仓库（superpowers等）
+- 趋势：从社区驱动走向Anthropic官方标准化
+
+## 关联
+- [[entity/Skills]]
+- [[entity/OpenClaw]]
+- [[entity/superpowers]]
+
+## 来源
+- [[source/一文带你看懂_火爆全网的Skills到底是个啥]]
+- [[source/Claude悄悄更新了Skills生成器_这绝对是一次史诗级升级]]
+- [[source/安利一个11万Star的必装插件_能让你的Agent体验直接质变]]
+- [[source/分享6个我觉得应该必装的Skills]]
